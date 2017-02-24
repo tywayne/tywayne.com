@@ -47,7 +47,6 @@
 		setParts: function( parts ) {
 			document.getElementById( 'part_one' ).innerHTML = parts.one;
 			document.getElementById( 'part_two' ).innerHTML = parts.two;
-			console.log( parts );
 		}
 	}
 	api.init();
