@@ -38,6 +38,8 @@ markdown: kramdown
 collections:
     links:
         output: false
+    portfolio:
+        output: false
 
 gems:
     - jekyll-feed

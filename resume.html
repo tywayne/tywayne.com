@@ -66,48 +66,15 @@ permalink: /resume/
 		
 		<div class="mb4">
 			<ul class="pl0 list cf">
+				{% assign portfolio_items = site.portfolio | sort: 'order' %}
+				{% for portfolio_item in portfolio_items %}
 				<li class="fl w-100 w-50-l border-box db pr3 mb3">
-					<a class="db no-underline blue dim" href="https://ahfrack.com/" target="_blank">
-						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/AhFrack-50.png?ver={{site.version}}" />
-						<span class="project_title">Ah, Frack!</span>
+					<a class="db no-underline blue dim" href="{{ portfolio_item.link }}" {% if portfolio_item.external %}target="_blank"{% endif %}>
+						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/{{ portfolio_item.image }}?ver={{site.version}}" />
+						<span class="project_title">{{ portfolio_item.title}}</span>
 					</a>
 				</li>
-				<li class="fl w-100 w-50-l border-box db pr3 mb3">
-					<a class="db no-underline blue dim" href="http://dailythunder.com/" target="_blank">
-						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/DailyThunder-50.png?ver={{site.version}}" />
-						<span class="project_title">Daily Thunder</span>
-					</a>
-				</li>
-				<li class="fl w-100 w-50-l border-box db pr3 mb3">
-					<a class="db no-underline blue dim" href="https://simpletongoods.com" target="_blank">
-						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/Simpleton-50.png?ver={{site.version}}" />
-						<span class="project_title">Simpleton Goods</span>
-					</a>
-				</li>
-				<li class="fl w-100 w-50-l border-box db pr3 mb3">
-					<a class="db no-underline blue dim" href="http://artdeskmagazine.com" target="_blank">
-						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/Artdesk-50.png?ver={{site.version}}" />
-						<span class="project_title">ArtDesk Magazine</span>
-					</a>
-				</li>
-				<li class="fl w-100 w-50-l border-box db pr3 mb3">
-					<a class="db no-underline blue dim" href="http://ithemes.com/sync" target="_blank">
-						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/Sync-50.png?ver={{site.version}}" />
-						<span class="project_title">iThemes Sync</span>
-					</a>
-				</li>
-				<li class="fl w-100 w-50-l border-box db pr3 mb3">
-					<a class="db no-underline blue dim" href="http://ithemes.com/backupbuddy" target="_blank">
-						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/BackupBuddy-50.png?ver={{site.version}}" />
-						<span class="project_title">iThemes BackupBuddy</span>
-					</a>
-				</li>
-				<li class="fl w-100 w-50-l border-box db pr3 mb3">
-					<a class="db no-underline blue dim" href="http://ithemes.com/security" target="_blank">
-						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/Security-50.png?ver={{site.version}}" />
-						<span class="project_title">iThemes Security</span>
-					</a>
-				</li>
+				{% endfor %}
 			</ul>
 		</div>
 	</section>
