@@ -31,6 +31,7 @@
 
 		bindEvents: function() {
 			document.addEventListener( 'click', api.refreshParts );
+			document.addEventListener( 'touchstart', api.refreshParts );
 		},
 
 		refreshParts: function() {
