@@ -21,6 +21,7 @@ gem "jekyll", "3.4.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem 'normalize-scss', '~> 5.0', '>= 5.0.3'
+   gem 'jekyll-minifier'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
