@@ -35,13 +35,17 @@ google_analytics: UA-11264448-3
 # Build settings
 markdown: kramdown
 
+collections:
+    links:
+        output: false
+
 gems:
-  - jekyll-feed
-  - normalize-scss
-  - jekyll-minifier
+    - jekyll-feed
+    - normalize-scss
+    - jekyll-minifier
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  
+    - Gemfile
+    - Gemfile.lock
+
 jekyll-minifier:
-  exclude: ['htaccess', '.htaccess']
+exclude: ['htaccess', '.htaccess']

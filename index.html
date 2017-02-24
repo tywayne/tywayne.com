@@ -19,13 +19,25 @@ layout: index
 
 <aside class="pv2 ph5-ns ph4 mb5 measure f4 lh-copy">
 	<ul class="list pl0">
-		<li><a class="gray hover-dark-gray no-underline" href="/resume">Résumé / Portfolio</a></li>
-		<li><a class="gray hover-dark-gray no-underline" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}">Instagram</a></li>
-		<li><a class="gray hover-dark-gray no-underline" target="_blank" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a></li>
-		<li><a class="gray hover-dark-gray no-underline" target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">Facebook</a></li>
-		<li><a class="gray hover-dark-gray no-underline" target="_blank" href="https://open.spotify.com/user/{{ site.spotify_username }}">Spotify</a></li>
-		<li><a class="gray hover-dark-gray no-underline" target="_blank" href="https://github.com/{{ site.github_username }}">Github</a></li>
-		<li><a class="gray hover-dark-gray no-underline" target="_blank" href="https://dribbble.com/{{ site.dribbble_username }}">Dribbble</a></li>
-		<li><a class="gray hover-dark-gray no-underline" href="mailto:{{ site.email }}">Email</a></li>
+		{% assign links = site.links | sort: 'order' %}
+		{% for link in links %}
+			<li><a class="gray hover-dark-gray no-underline" href="{{link.link}}">{{link.title}}</a></li>
+		{% endfor %}
 	</ul>
+
+	{% if site.categories.general != null %}
+	<h2 class="gray mt5 mb1 f3 fw1">blog</h2>
+	<div class="mv2 lh-copy gray measure-wide">
+		<ul class="list pl0 mt3 mb5">
+			{% for post in site.posts limit:10 %}
+			<li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
+				<a href="{{ post.url }}" class="link blue lh-title">
+					<span class="db no-underline">{{ post.title }}</span>
+					<span class="db black-60">{{ post.date | date: "%b %d, %Y"}}</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
 </aside>
