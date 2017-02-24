@@ -21,7 +21,7 @@ layout: index
 	<ul class="list pl0">
 		{% assign links = site.links | sort: 'order' %}
 		{% for link in links %}
-			<li><a class="gray hover-dark-gray no-underline" href="{{link.link}}">{{link.title}}</a></li>
+			<li><a class="gray hover-dark-gray no-underline" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>{{link.title}}</a></li>
 		{% endfor %}
 	</ul>
 

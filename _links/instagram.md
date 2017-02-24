@@ -4,4 +4,5 @@ title: Instagram
 layout: null
 permalink: null
 order: 2
+external: true
 ---
