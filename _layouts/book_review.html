@@ -15,23 +15,24 @@ layout: default
 	<ul class="list pl0 mt3 mb5">
 		{% if page.previous %}
 			<li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-				<a href="{{page.previous.url}}" class="link blue lh-title">
+				<a href="{{page.previous.url}}" class="link blue lh-title dim">
 					<span class="db dark-gray ttu tracked ">Prev</span>
-					<span class="dib no-underline">{{ page.previous.title}}</span>
+					<span class="db no-underline">{{ page.previous.title}}</span>
 					<span class="db black-60">{{ page.previous.author }}</span>
 				</a>
 			</li>
 		{% endif %}
 		{% if page.next %}
 		<li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-			<a href="{{page.next.url}}" class="link blue lh-title">
+			<a href="{{page.next.url}}" class="link blue lh-title dim">
 				<span class="db dark-gray ttu tracked ">Next</span>
-				<span class="dib no-underline">{{ page.next.title}}</span>
+				<span class="db no-underline">{{ page.next.title}}</span>
 				<span class="db black-60">{{ page.previous.author }}</span>
 			</a>
 		</li>
 		{% endif %}
 	</ul>
 	{% endif %}
-	<a class="mv3 no-underline blue hover-dark-blue" href="{{ site.url }}">&larr; Go Back Home</a>
+	<a class="db mv3 mb0 no-underline blue dim" href="/book-reviews/">&larr; Book Reviews</a>
+	<a class="db mv3 no-underline blue dim" href="{{ site.url }}">&larr; Home</a>
 </aside>

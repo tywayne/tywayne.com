@@ -11,3 +11,16 @@ hr {
 	border: none;
 	border-bottom: 1px dashed #d1d6d9;
 }
+
+main {
+	a {
+		color: $brand-color;
+		text-decoration: none;
+		transition: opacity .15s ease-in;
+		
+		&:hover,
+		&:focus {
+			opacity: .5;
+		}
+	}
+}
