@@ -1,0 +1,24 @@
+---
+layout: default
+title: Ty Carlson | Blog
+permalink: /blog/
+---
+
+<main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
+	<section class="measure-wide">
+		<h2 class="gray mb1 f3 fw1">blog</h2>
+		<div class="mv2 lh-copy gray measure-wide">
+			<ul class="list pl0 mt3 mb5">
+				{% for post in site.posts %}
+				<li class="pv4 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
+					<a href="{{ post.url }}" class="link blue lh-title">
+						<span class="db no-underline">{{ post.title }}</span>
+						<span class="db black-60">{{ post.date | date: "%b %d, %Y"}}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<a class="mv3 no-underline blue hover-dark-blue" href="{{ site.url }}">&larr; Go Back Home</a>
+	</section>
+</main>

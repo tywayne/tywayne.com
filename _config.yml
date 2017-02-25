@@ -36,10 +36,16 @@ google_analytics: UA-11264448-3
 markdown: kramdown
 
 collections:
+    posts:
+        output: true
+        permalink: /blog/:title
     links:
         output: false
     portfolio:
         output: false
+    book_reviews:
+        output: true
+        permalink: /book-review/:title
 
 gems:
     - jekyll-feed

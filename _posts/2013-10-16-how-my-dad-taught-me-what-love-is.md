@@ -3,7 +3,7 @@ layout: post
 title:  "How My Dad Taught Me What Love Is"
 date:   2013-10-16
 categories: general
-published: false
+published: true
 ---
 
 
