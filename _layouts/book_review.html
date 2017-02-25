@@ -13,6 +13,15 @@ layout: default
 <aside class="pv2 ph5-ns ph4 lh-copy gray measure-wide">
 	{% if page.previous or page.next %}
 	<ul class="list pl0 mt3 mb5">
+		{% if page.next %}
+		<li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
+			<a href="{{page.next.url}}" class="link blue lh-title dim">
+				<span class="db dark-gray ttu tracked ">Next</span>
+				<span class="db no-underline">{{ page.next.title}}</span>
+				<span class="db black-60">{{ page.next.author }}</span>
+			</a>
+		</li>
+		{% endif %}
 		{% if page.previous %}
 			<li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
 				<a href="{{page.previous.url}}" class="link blue lh-title dim">
@@ -21,15 +30,6 @@ layout: default
 					<span class="db black-60">{{ page.previous.author }}</span>
 				</a>
 			</li>
-		{% endif %}
-		{% if page.next %}
-		<li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-			<a href="{{page.next.url}}" class="link blue lh-title dim">
-				<span class="db dark-gray ttu tracked ">Next</span>
-				<span class="db no-underline">{{ page.next.title}}</span>
-				<span class="db black-60">{{ page.previous.author }}</span>
-			</a>
-		</li>
 		{% endif %}
 	</ul>
 	{% endif %}
