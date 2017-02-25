@@ -44,6 +44,7 @@ gems:
     - normalize-scss
     - jekyll-minifier
     - jekyll-coffeescript
+    - jekyll-sitemap
 exclude:
     - Gemfile
     - Gemfile.lock
