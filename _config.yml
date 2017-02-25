@@ -38,14 +38,14 @@ markdown: kramdown
 collections:
     posts:
         output: true
-        permalink: /blog/:title
+        permalink: /blog/:title/
     links:
         output: false
     portfolio:
         output: false
     book_reviews:
         output: true
-        permalink: /book-review/:title
+        permalink: /book-review/:title/
 
 gems:
     - jekyll-feed
