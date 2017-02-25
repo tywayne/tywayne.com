@@ -17,19 +17,11 @@ title: Ty Carlson | designer, developer, husband, and friend
 email: tywayne@gmail.com
 description: My name is Ty Carlson and I am a designer, developer, husband, and friend.
 
-version: '1.1.0'
+version: '1.2.0'
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tywayne.com"
 cdn_url: "https://dzgsio58p4nbe.cloudfront.net"
-
-twitter_username:   tywayne
-github_username:    tywayne
-facebook_username:  tywayne
-instagram_username: tywayne
-spotify_username:   tywayne
-dribbble_username:  tywayne
-
 google_analytics: UA-11264448-3
 
 # Build settings
@@ -51,6 +43,7 @@ gems:
     - jekyll-feed
     - normalize-scss
     - jekyll-minifier
+    - jekyll-coffeescript
 exclude:
     - Gemfile
     - Gemfile.lock
