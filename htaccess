@@ -3,8 +3,6 @@ layout: null
 permalink: .htaccess
 ---
 
-ErrorDocument 404 /404/
-
 <IfModule mod_expires.c>
 	ExpiresActive on
 
