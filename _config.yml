@@ -15,12 +15,12 @@
 # in the templates via {{ site.myvariable }}.
 title: Ty Carlson | designer, developer, husband, and friend
 email: tywayne@gmail.com
-description: My name is Ty Carlson and I am a designer, developer, husband, and friend.
+description: My name is Ty Carlson and I am a designer, developer, husband, father, and friend.
 
-version: '1.2.2'
+version: '1.2.3'
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tywayne.com"
+# url: "https://tywayne.com/"
 cdn_url: "https://dzgsio58p4nbe.cloudfront.net"
 google_analytics: UA-11264448-3
 
@@ -37,7 +37,7 @@ collections:
         output: false
     book_reviews:
         output: true
-        permalink: /book-review/:title/
+        permalink: /book-reviews/:title/
 
 gems:
     - jekyll-feed
