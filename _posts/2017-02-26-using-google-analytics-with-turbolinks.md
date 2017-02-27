@@ -14,7 +14,7 @@ Google Analytics is getting page views sent when using [Turbolinks](https://gith
 ### The Problem
 We're all familiar with Google Analytics and how it works. You add a script provided by Google,
 that puts a global `ga` object with methods and values that we can use to send tracking information 
-to Google. Included by default in the code provided by Google is a call to send a pageview.
+to Google. Included by default in the code provided by Google is a call to send a page view.
 
 ``` javascript
 ga( 'send', 'pageview');
