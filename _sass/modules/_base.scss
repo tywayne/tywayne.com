@@ -35,3 +35,19 @@ main {
 	height: 5px;
 	background-color: $brand-color;
 }
+
+blockquote {
+	background-color: #fff;
+	background-color: rgba( white, 0.3 );
+	border-left: 3px solid $brand-color;
+	padding: 2rem;
+	margin: 0;
+	
+	p {
+		margin: 0 0 1rem 0
+	}
+	
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
