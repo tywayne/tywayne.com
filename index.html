@@ -16,14 +16,15 @@ layout: index
 	and the wavin’ wheat can sure smell sweet, when the wind comes right 
 	behind the rain.</p>
 </main>
-
-<aside class="pv2 ph5-ns ph4 mb5 measure f4 lh-copy">
+<nav class="pv2 ph5-ns ph4 measure f4 lh-copy">
 	<ul class="list pv5 pl0 mv2 ba bl-0 br-0 b--dotted b--black-30">
 		<li><a class="blue dim no-underline" href="/resume/">Résumé</a></li>
 		<li><a class="blue dim no-underline" href="/blog/">Blog</a></li>
 		<li><a class="blue dim no-underline" href="/book-reviews/">Book Reviews</a></li>
 		<li><a class="blue dim no-underline" href="/rowengartner/" data-turbolinks="false">Rowengartner</a></li>
 	</ul>
+</nav>
+<aside class="pv2 ph5-ns ph4 mb5 measure f4 lh-copy">
 	<ul class="list pl0 mt5">
 		{% assign links = site.links | sort: 'order' %}
 		{% for link in links %}
