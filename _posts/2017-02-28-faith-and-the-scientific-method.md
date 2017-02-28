@@ -6,8 +6,8 @@ categories: faith religion
 published: true
 ---
 
-In December of last year [The New Yorker re-published a story](http://www.newyorker.com/culture/culture-desk/a-megachurch-pastors-search-for-a-more-forgiving-faith)
-based on an [earlier story and video published in 2012](http://www.newyorker.com/magazine/2012/11/26/the-hell-raiser-3),
+In December of last year [The New Yorker re-published a story](http://www.newyorker.com/culture/culture-desk/a-megachurch-pastors-search-for-a-more-forgiving-faith){:target="_blank"}
+based on an [earlier story and video published in 2012](http://www.newyorker.com/magazine/2012/11/26/the-hell-raiser-3){:target="_blank"},
 that detailed recent years of life for Rob Bell, a megachurch pastor, author, and teacher.
 Regardless of any preconceptions you may have about Bell or his theology, it is an interesting take
 from his perspective.
