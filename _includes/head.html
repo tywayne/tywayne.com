@@ -6,8 +6,8 @@
 	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
 	
 	<meta name="robots" content="noodp">
-	<link rel="canonical" href="http://tywayne.com/">
-	<link rel="home" href="http://tywayne.com/" />
+	<link rel="canonical" href="{% if page.url %}{{ page.url | absolute_url }}{% else %}{{site.url | absolute_url }}{% endif %}">
+	<link rel="home" href="https://tywayne.com/" />
 	<link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | relative_url }}">
 	
 	<meta property="og:locale" content="en_US">
