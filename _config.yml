@@ -29,7 +29,6 @@ collections:
 
 gems:
     - jekyll-feed
-    - normalize-scss
     - jekyll-minifier
     - jekyll-coffeescript
     - jekyll-sitemap
@@ -38,4 +37,4 @@ exclude:
     - Gemfile.lock
 
 jekyll-minifier:
-exclude: ['htaccess', '.htaccess']
+    exclude: ['htaccess', '.htaccess']
