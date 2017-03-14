@@ -5,7 +5,7 @@
 layout: index
 ---
 
-<main class="pv2 ph5-ns ph4 measure f3-ns f4 lh-copy gray" role="main">
+<main class="pb5 ph5-ns ph4 measure f3-ns f4 lh-copy gray" role="main">
 	<p class="mt0">My name is Ty Carlson and I am a designer, developer, husband, father, and 
 	friend. I work during the day as a Lead Front End 
 	Developer at <a class="no-underline blue dim" target="_blank" href="http://ithemes.com/">iThemes</a>, creating software
@@ -16,7 +16,7 @@ layout: index
 	and the wavin’ wheat can sure smell sweet, when the wind comes right 
 	behind the rain.</p>
 </main>
-<nav class="pv2 ph5-ns ph4 measure f4 lh-copy">
+<nav class="ph5-ns ph4 measure f4 lh-copy">
 	<ul class="list pv5 pl0 mv2 ba bl-0 br-0 b--dotted b--black-30">
 		<li><a class="blue dim no-underline" href="/resume/">Résumé</a></li>
 		<li><a class="blue dim no-underline" href="/blog/">Blog</a></li>
@@ -24,8 +24,8 @@ layout: index
 		<li><a class="blue dim no-underline" href="/rowengartner/" data-turbolinks="false">Rowengartner</a></li>
 	</ul>
 </nav>
-<aside class="pv2 ph5-ns ph4 mb5 measure f4 lh-copy">
-	<ul class="list pl0 mt5">
+<aside class="ph5-ns ph4 measure f4 lh-copy">
+	<ul class="list pt5 pl0">
 		{% assign links = site.links | sort: 'order' %}
 		{% for link in links %}
 			<li><a class="blue dim no-underline" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>{{link.title}}</a></li>
