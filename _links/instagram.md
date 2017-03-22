@@ -5,4 +5,6 @@ layout: null
 permalink: null
 order: 2
 external: true
+type: social
+visible: true
 ---

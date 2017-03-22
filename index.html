@@ -5,6 +5,8 @@
 layout: index
 ---
 
+{% assign links = site.links | sort: 'order' %}
+
 <main class="pv2 ph5-ns ph4 measure f3-ns f4 lh-copy gray" role="main">
 	<p class="mt0">My name is Ty Carlson and I am a designer, developer, husband, father, and
 	friend. I work during the day as the Lead Front End Developer at
@@ -18,17 +20,27 @@ layout: index
 </main>
 <nav class="ph5-ns ph4 measure f4 lh-copy">
 	<ul class="list pv5 pl0 mv2 ba bl-0 br-0 b--dotted b--black-30">
-		<li><a class="blue dim no-underline" href="/resume/">Résumé</a></li>
-		<li><a class="blue dim no-underline" href="/blog/">Blog</a></li>
-		<li><a class="blue dim no-underline" href="/book-reviews/">Book Reviews</a></li>
-		<li><a class="blue dim no-underline" href="/rowengartner/" data-turbolinks="false">Rowengartner</a></li>
+		{% for link in links %}
+			{% if link.type == "internal" and link.visible == true  %}
+				<li>
+					<a class="blue dim no-underline" href="{{site.url}}{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
+						{{link.title}}
+					</a>
+				</li>
+			{% endif %}
+		{% endfor %}
 	</ul>
 </nav>
 <aside class="ph5-ns ph4 measure f4 lh-copy">
 	<ul class="list pt5 pl0">
-		{% assign links = site.links | sort: 'order' %}
 		{% for link in links %}
-			<li><a class="blue dim no-underline" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>{{link.title}}</a></li>
+			{% if link.type == "social" and link.visible == true  %}
+				<li>
+					<a class="blue dim no-underline" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
+						{{link.title}}
+					</a>
+				</li>
+			{% endif %}
 		{% endfor %}
 	</ul>
 </aside>
