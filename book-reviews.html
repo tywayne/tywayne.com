@@ -6,24 +6,24 @@ permalink: /book-reviews/
 ---
 
 <main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
-	<section class="measure-wide">
-		<h2 class="gray mb1 f3 fw1">book reviews</h2>
-		<p>Short reviews or thoughts about books as I read them. This is primarily for my personal historical purposes, but might as well make it public – maybe <em>someone</em> will find them interesting.</p>
-		<p>Year shown is when I read it, not a publish date.</p>
-		<div class="mv2 lh-copy gray measure-wide">
-			<ul class="list pl0 mt3 mb5">
-				{% assign reviews = site.book_reviews | reverse %}
-				{% for review in reviews %}
-				<li class="pv4 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-					<a href="{{ review.url }}" class="link blue lh-title dim">
-						<span class="db no-underline">{{ review.title }}</span>
-						<span class="db gray">{{ review.author }}</span>
-						<span class="db gray fw7">{{ review.date | date: "%Y" }}</span>
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
-		<a class="mv3 no-underline blue dim" href="{{ site.url }}">&larr; Home</a>
-	</section>
+  <section class="measure-wide">
+    <h2 class="gray mb1 f3 fw1">book reviews</h2>
+    <p>Short reviews or thoughts about books as I read them. This is primarily for my personal historical purposes, but might as well make it public – maybe <em>someone</em> will find them interesting.</p>
+    <p>Year shown is when I read it, not a publish date.</p>
+    <div class="mv2 lh-copy gray measure-wide">
+      <ul class="list pl0 mt3 mb5">
+        {% assign reviews = site.book_reviews | reverse %}
+        {% for review in reviews %}
+        <li class="pv4 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
+          <a href="{{ review.url }}" class="link blue lh-title dim">
+            <span class="db no-underline">{{ review.title }}</span>
+            <span class="db gray">{{ review.author }}</span>
+            <span class="db gray fw7">{{ review.date | date: "%Y" }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a class="mv3 no-underline blue dim" href="{{ site.url }}">&larr; Home</a>
+  </section>
 </main>

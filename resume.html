@@ -6,71 +6,71 @@ permalink: /resume/
 ---
 
 <main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
-	<p class="f5 measure-wide lh-copy">I am a designer and front end developer with experience building responsive designs for everything from basic marketing websites to software used on hundreds of thousands of websites. I enjoy both the creative work that comes from designing a beautiful project with solid UI/UX, and the technical side of making it all actually work in a browser. In my free time, I enjoy spending time with my wife and son, as well as chasing after our retired racing greyhound, drinking a nicely brewed pot of tea, or practicing my new hobby of wheel thrown pottery.</p>
+  <p class="f5 measure-wide lh-copy">I am a designer and front end developer with experience building responsive designs for everything from basic marketing websites to software used on hundreds of thousands of websites. I enjoy both the creative work that comes from designing a beautiful project with solid UI/UX, and the technical side of making it all actually work in a browser. In my free time, I enjoy spending time with my wife and son, as well as chasing after our retired racing greyhound, drinking a nicely brewed pot of tea, or practicing my new hobby of wheel thrown pottery.</p>
 
-	<section class="measure-wide">
-		<h2 class="f2 w-50 mb0">Experience</h2>
-		<hr />
-		<div class="mb4">
-			<h3 class="f5 ttu">Datebox - Lead Front End Developer<br />March 2017 - Present</h3>
-			<p>As the Lead Front End Developer, I work as a liason between the design and development teams to create tools for Datebox customers. This includes everything from the sales oriented marketing website, to the user's subscription and resource management.</p>
-		</div>
-		<div class="mb4">
-			<h3 class="f5 ttu">iThemes - Lead Front End Developer and Product Designer<br />October 2011 - March 2017</h3>
-			<p>As a Lead Front End Developer I have a hand in almost every product iThemes creates, though my primary responsibility has been iThemes Sync, a custom SaaS web application providing remote management of multiple WordPress websites in a central location. I designed the application, built out a front end heavily reliant on in-page AJAX interactions, and continue to provide design and development of new features.</p>
-			<p>Additionally, I recently assisted in rebuilding an internal customer and subscription management application as a single page React application on top of a RESTful JSON API. </p>
-		</div>
-		<div class="mb4">
-			<h3 class="f5 ttu">Element Fusion ( NetSuite ) - Web Designer<br />November 2010 - October 2011</h3>
-			<p>As a web designer for Element Fusion, I worked directly with clients to provide bespoke solutions to their business website needs. From discovery and mockups, to HTML/CSS/JS and content insertion, I helped build the vital online components of their business or organization.</p>
-			<p>Additionally I designed and developed default templates to be used on their content management platform, LightCMS. </p>
-		</div>
-	</section>
-	<section class="measure-wide">
-		<h2 class="f2 w-50 mb0">Education</h2>
-		<hr />
-		
-		<div class="mb4">
-			<h3 class="f5 ttu">Southwestern Oklahoma State University</h3>
-			<p>(2008) B.A. Communication Arts - Speech Emphasis, Marketing Minor</p>
-		</div>
-	</section>
-	<section class="measure-wide">
-		<h2 class="f2 w-50 mb0">Skillset</h2>
-		<hr />
-		<div class="mb4">
-			<ul class="pl0 f6">
-				<li>Adobe Photoshop</li>
-				<li>Adobe Illustrator</li>
-				<li>UI/UX Principles</li>
-				<li>HTML/CSS</li>
-				<li>Javascript</li>
-				<li>Sass/Less</li>
-				<li>PHP</li>
-				<li>Grunt/Gulp</li>
-				<li>Browserify/Webpack</li>
-				<li>Git from command line</li>
-				<li>WordPress, CraftCMS, Jekyll, and various other content management systems</li>
-				<li>Basic Ubuntu server administration</li>
-			</ul>
-		</div>
-	</section>
-	<section class="w-100 w-75-l">
-		<h2 class="f2 w-50 mb0">Projects</h2>
-		<hr />
-		<div class="mb4">
-			<ul class="pl0 list cf">
-				{% assign portfolio_items = site.portfolio | sort: 'order' %}
-				{% for portfolio_item in portfolio_items %}
-				<li class="fl w-100 w-50-l border-box db pr3 mb3">
-					<a class="db no-underline blue dim" href="{{ portfolio_item.link }}" {% if portfolio_item.external %}target="_blank"{% endif %}>
-						<img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/{{ portfolio_item.image }}?ver={{site.version}}" />
-						<span class="project_title">{{ portfolio_item.title}}</span>
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
-	</section>
-	<a class="mv3 no-underline blue dim" href="{{ site.url }}">&larr; Home</a>
+  <section class="measure-wide">
+    <h2 class="f2 w-50 mb0">Experience</h2>
+    <hr />
+    <div class="mb4">
+      <h3 class="f5 ttu">Datebox - Lead Front End Developer<br />March 2017 - Present</h3>
+      <p>As the Lead Front End Developer, I work as a liason between the design and development teams to create tools for Datebox customers. This includes everything from the sales oriented marketing website, to the user's subscription and resource management.</p>
+    </div>
+    <div class="mb4">
+      <h3 class="f5 ttu">iThemes - Lead Front End Developer and Product Designer<br />October 2011 - March 2017</h3>
+      <p>As a Lead Front End Developer I have a hand in almost every product iThemes creates, though my primary responsibility has been iThemes Sync, a custom SaaS web application providing remote management of multiple WordPress websites in a central location. I designed the application, built out a front end heavily reliant on in-page AJAX interactions, and continue to provide design and development of new features.</p>
+      <p>Additionally, I recently assisted in rebuilding an internal customer and subscription management application as a single page React application on top of a RESTful JSON API. </p>
+    </div>
+    <div class="mb4">
+      <h3 class="f5 ttu">Element Fusion ( NetSuite ) - Web Designer<br />November 2010 - October 2011</h3>
+      <p>As a web designer for Element Fusion, I worked directly with clients to provide bespoke solutions to their business website needs. From discovery and mockups, to HTML/CSS/JS and content insertion, I helped build the vital online components of their business or organization.</p>
+      <p>Additionally I designed and developed default templates to be used on their content management platform, LightCMS. </p>
+    </div>
+  </section>
+  <section class="measure-wide">
+    <h2 class="f2 w-50 mb0">Education</h2>
+    <hr />
+    
+    <div class="mb4">
+      <h3 class="f5 ttu">Southwestern Oklahoma State University</h3>
+      <p>(2008) B.A. Communication Arts - Speech Emphasis, Marketing Minor</p>
+    </div>
+  </section>
+  <section class="measure-wide">
+    <h2 class="f2 w-50 mb0">Skillset</h2>
+    <hr />
+    <div class="mb4">
+      <ul class="pl0 f6">
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>UI/UX Principles</li>
+        <li>HTML/CSS</li>
+        <li>Javascript</li>
+        <li>Sass/Less</li>
+        <li>PHP</li>
+        <li>Grunt/Gulp</li>
+        <li>Browserify/Webpack</li>
+        <li>Git from command line</li>
+        <li>WordPress, CraftCMS, Jekyll, and various other content management systems</li>
+        <li>Basic Ubuntu server administration</li>
+      </ul>
+    </div>
+  </section>
+  <section class="w-100 w-75-l">
+    <h2 class="f2 w-50 mb0">Projects</h2>
+    <hr />
+    <div class="mb4">
+      <ul class="pl0 list cf">
+        {% assign portfolio_items = site.portfolio | sort: 'order' %}
+        {% for portfolio_item in portfolio_items %}
+        <li class="fl w-100 w-50-l border-box db pr3 mb3">
+          <a class="db no-underline blue dim" href="{{ portfolio_item.link }}" {% if portfolio_item.external %}target="_blank"{% endif %}>
+            <img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/{{ portfolio_item.image }}?ver={{site.version}}" />
+            <span class="project_title">{{ portfolio_item.title}}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  <a class="mv3 no-underline blue dim" href="{{ site.url }}">&larr; Home</a>
 </main>

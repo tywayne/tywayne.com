@@ -18,11 +18,11 @@ So too, I want to live. I want the base of my beliefs about who Jesus is to come
 
 
 <div class="mt5 mb4">
-	<span class="db ttu tracked-mega silver">Buy It:</span>
-	<a 
-		class="f6 link dim br2 ba ph3 pv2 mb2 dib blue"
-		target="_blank" href="https://www.amazon.com/gp/product/0310293995/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0310293995&linkCode=as2&tag=tywayne-20&linkId=388d4582d69d63a52178a4b105ecf77f">
-		Evolving in Monkey Town - Amazon
-	</a>
-	<img src="//ir-na.amazon-adsystem.com/e/ir?t=tywayne-20&l=am2&o=1&a=0310293995" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+  <span class="db ttu tracked-mega silver">Buy It:</span>
+  <a 
+    class="f6 link dim br2 ba ph3 pv2 mb2 dib blue"
+    target="_blank" href="https://www.amazon.com/gp/product/0310293995/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0310293995&linkCode=as2&tag=tywayne-20&linkId=388d4582d69d63a52178a4b105ecf77f">
+    Evolving in Monkey Town - Amazon
+  </a>
+  <img src="//ir-na.amazon-adsystem.com/e/ir?t=tywayne-20&l=am2&o=1&a=0310293995" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 </div>

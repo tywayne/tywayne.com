@@ -2,21 +2,21 @@
 ---
 
 class Switcher
-	constructor: (options) ->
-		{@one, @two } = options
+  constructor: (options) ->
+    {@one, @two } = options
 
-	refreshParts: ->
-		this.setParts this.getParts()
+  refreshParts: ->
+    this.setParts this.getParts()
 
-	getParts: ->
-		{
-			one: @one[ Math.floor( Math.random() * @one.length ) ],
-			two: @two[ Math.floor( Math.random() * @two.length ) ],
-		}
+  getParts: ->
+    {
+      one: @one[ Math.floor( Math.random() * @one.length ) ],
+      two: @two[ Math.floor( Math.random() * @two.length ) ],
+    }
 
-	setParts: ( parts ) ->
-		document.getElementById( 'part_one' ).innerHTML = parts.one
-		document.getElementById( 'part_two' ).innerHTML = parts.two
+  setParts: ( parts ) ->
+    document.getElementById( 'part_one' ).innerHTML = parts.one
+    document.getElementById( 'part_two' ).innerHTML = parts.two
 
 
 partsOne = [ 'Rulen', 'Raven', 'Rosen', 'Roven', 'Roger', 'Rowen', 'Runna', 'Rollin' ]
@@ -25,7 +25,7 @@ henry = new Switcher one: partsOne, two: partsTwo
 henry.refreshParts()
 
 document.addEventListener 'click', ->
-	henry.refreshParts()
-	
+  henry.refreshParts()
+  
 document.addEventListener 'touchstart', ->
-	henry.refreshParts()
+  henry.refreshParts()
