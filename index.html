@@ -23,7 +23,7 @@ layout: index
     {% for link in links %}
       {% if link.type == "internal" and link.visible == true  %}
         <li>
-          <a class="blue dim no-underline" href="{{site.url}}{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
+          <a class="blue dim no-underline" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
             {{link.title}}
           </a>
         </li>
