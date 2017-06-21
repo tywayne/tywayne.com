@@ -8,39 +8,39 @@ layout: index
 {% assign links = site.links | sort: 'order' %}
 
 <main class="pv2 ph5-ns ph4 measure f3-ns f4 lh-copy gray" role="main">
-	<p class="mt0">My name is Ty Carlson and I am a designer, developer, husband, father, and
-	friend. I work during the day as the Lead Front End Developer at
-	<a class="no-underline blue dim" target="_blank" href="http://getdatebox.com/">Datebox</a>,
-	helping couples by making date night simple, fun, and easy.</p>
+  <p class="mt0">My name is Ty Carlson and I am a designer, developer, husband, father, and
+  friend. I work during the day as the Lead Front End Developer at
+  <a class="no-underline blue dim" target="_blank" href="http://getdatebox.com/">Datebox</a>,
+  helping couples by making date night simple, fun, and easy.</p>
 
-	<p>I currently live with my wife <a class="no-underline blue dim" target="_blank" href="http://lccalligraphy.com">Lauren</a> 
-	and my son Liam in Oklahoma City, OK – where the wind comes sweepin’ down the plain, 
-	and the wavin’ wheat can sure smell sweet, when the wind comes right 
-	behind the rain.</p>
+  <p>I currently live with my wife <a class="no-underline blue dim" target="_blank" href="http://lccalligraphy.com">Lauren</a> 
+  and my son Liam in Oklahoma City, OK – where the wind comes sweepin’ down the plain, 
+  and the wavin’ wheat can sure smell sweet, when the wind comes right 
+  behind the rain.</p>
 </main>
 <nav class="ph5-ns ph4 measure f4 lh-copy">
-	<ul class="list pv5 pl0 mv2 ba bl-0 br-0 b--dotted b--black-30">
-		{% for link in links %}
-			{% if link.type == "internal" and link.visible == true  %}
-				<li>
-					<a class="blue dim no-underline" href="{{site.url}}{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
-						{{link.title}}
-					</a>
-				</li>
-			{% endif %}
-		{% endfor %}
-	</ul>
+  <ul class="list pv5 pl0 mv2 ba bl-0 br-0 b--dotted b--black-30">
+    {% for link in links %}
+      {% if link.type == "internal" and link.visible == true  %}
+        <li>
+          <a class="blue dim no-underline" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
+            {{link.title}}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </nav>
 <aside class="ph5-ns ph4 measure f4 lh-copy">
-	<ul class="list pt5 pl0">
-		{% for link in links %}
-			{% if link.type == "social" and link.visible == true  %}
-				<li>
-					<a class="blue dim no-underline" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
-						{{link.title}}
-					</a>
-				</li>
-			{% endif %}
-		{% endfor %}
-	</ul>
+  <ul class="list pt5 pl0">
+    {% for link in links %}
+      {% if link.type == "social" and link.visible == true  %}
+        <li>
+          <a class="blue dim no-underline" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
+            {{link.title}}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </aside>

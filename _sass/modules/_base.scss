@@ -1,58 +1,58 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 *, *:before, *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-	font-family: 'Inconsolata', monospace;
-	font-size: 16px;
-	background: #fff;
-	background-image: linear-gradient(-45deg, #f3e7e9 35%, #e3eeff 100%);
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  background: #fff;
+  background-image: linear-gradient(-45deg, #f3e7e9 35%, #e3eeff 100%);
 }
 
 hr {
-	border: none;
-	border-bottom: 1px dashed #d1d6d9;
-	margin: 2rem 0;
+  border: none;
+  border-bottom: 1px dashed #d1d6d9;
+  margin: 2rem 0;
 }
 
 main {
-	a {
-		color: $brand-color;
-		text-decoration: none;
-		transition: opacity .15s ease-in;
-		
-		&:hover,
-		&:focus {
-			opacity: .5;
-		}
-	}
+  a {
+    color: $brand-color;
+    text-decoration: none;
+    transition: opacity .15s ease-in;
+    
+    &:hover,
+    &:focus {
+      opacity: .5;
+    }
+  }
 }
 
 .turbolinks-progress-bar {
-	height: 5px;
-	background-color: $brand-color;
+  height: 5px;
+  background-color: $brand-color;
 }
 
 blockquote {
-	background-color: #fff;
-	background-color: rgba( white, 0.3 );
-	border-left: 3px solid $brand-color;
-	padding: 2rem;
-	margin: 0;
-	
-	p {
-		margin: 0 0 1rem 0
-	}
-	
-	p:last-child {
-		margin-bottom: 0;
-	}
+  background-color: #fff;
+  background-color: rgba( white, 0.3 );
+  border-left: 3px solid $brand-color;
+  padding: 2rem;
+  margin: 0;
+  
+  p {
+    margin: 0 0 1rem 0
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .rt {
-	background-color: #fff;
-	background-color: rgba( white, 0.3 );
+  background-color: #fff;
+  background-color: rgba( white, 0.3 );
 }

@@ -1,35 +1,36 @@
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>{% if page.title %}Ty Carlson | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
-	
-	<meta name="robots" content="noodp">
-	<link rel="canonical" href="{% if page.url %}{{ page.url | absolute_url }}{% else %}{{site.url | absolute_url }}{% endif %}">
-	<link rel="home" href="https://tywayne.com/" />
-	<link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | relative_url }}">
-	
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="{% if page.title %}Ty Carlson | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-	<meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
-	<meta property="og:url" content="{% if page.url %}{{ page.url | absolute_url }}{% else %}{{site.url | absolute_url }}{% endif %}">
-	<meta property="og:site_name" content="ty carlson">
-	
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
-	<meta name="twitter:title" content="{% if page.title %}Ty Carlson | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-	<meta name="twitter:site" content="@tywayne">
-	<meta name="twitter:creator" content="@tywayne">
+  <title>{% if page.title %}Ty Carlson | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
+  
+  <meta name="robots" content="noodp">
+  <link rel="canonical" href="{% if page.url %}{{ page.url | absolute_url }}{% else %}{{site.url | absolute_url }}{% endif %}">
+  <link rel="home" href="https://tywayne.com/" />
+  <link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | relative_url }}">
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.title %}Ty Carlson | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
+  <meta property="og:url" content="{% if page.url %}{{ page.url | absolute_url }}{% else %}{{site.url | absolute_url }}{% endif %}">
+  <meta property="og:site_name" content="ty carlson">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
+  <meta name="twitter:title" content="{% if page.title %}Ty Carlson | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta name="twitter:site" content="@tywayne">
+  <meta name="twitter:creator" content="@tywayne">
 
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"/>
-	<link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/css/main.css?ver={{site.version}}">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"/>
+  <link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/css/main.css?ver={{site.version}}">
+
 
 	<script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/turbolinks.js?ver={{site.version}}"></script>
 	<script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/app.js?ver={{site.version}}"></script>
 
-	{% if jekyll.environment == 'production' and site.google_analytics %}
-		{% include analytics.html %}
-	{% endif %}
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include analytics.html %}
+  {% endif %}
 </head>
