@@ -2,7 +2,7 @@
 title: "The Handmaid's Tale"
 author: Margaret Atwood
 layout: book_review
-published: true
+published: false
 date: 2017-05-25T21:53:07-06:00
 ---
 
