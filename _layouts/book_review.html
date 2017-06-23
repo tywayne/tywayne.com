@@ -6,6 +6,7 @@ layout: default
   <section class="measure-wide">
     <h1 class="f3 lh-title">{{ page.title }}</h1>
     <h2 class="f4 dib mb4 pb2 ba-2 bl-0 bt-0 br-0 b--solid b--blue">By: {{ page.author }}</h2>
+    <span class="mh0 mv4 mh4-ns mv0-ns db dib-ns pa2 rt">Read time: <strong>{% include read_time.html %}</strong></span>
     {{ content }}
   </section>
 </main>
