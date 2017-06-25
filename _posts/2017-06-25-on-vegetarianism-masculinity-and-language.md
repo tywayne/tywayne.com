@@ -4,6 +4,7 @@ title: On Vegetarianism, Masculinity, and Language
 date:   2017-06-25
 categories: personal faith religion
 published: true
+author: Ty Carlson
 ---
 
 *I originally drafted this as a series of tweets, but then remembered I have a blog for long(er)

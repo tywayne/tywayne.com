@@ -4,6 +4,7 @@ title:  "New Adventure: Helping Couples Make Date Night Simple With Datebox"
 date:   2017-03-24
 categories: life
 published: true
+author: Ty Carlson
 ---
 
 As I've flown past milestones in my life – entering my third decade, buying a house, having a child –

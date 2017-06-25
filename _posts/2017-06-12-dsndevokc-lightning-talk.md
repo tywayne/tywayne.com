@@ -4,6 +4,7 @@ title:  "DSN+DEV+OKC Lightning Talk"
 date:   2017-06-12
 categories: development
 published: true
+author: Ty Carlson
 ---
 
 I recently was asked to give a short lightning talk at a DSN+DEV+OKC, a local design and development

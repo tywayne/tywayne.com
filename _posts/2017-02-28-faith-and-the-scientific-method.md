@@ -4,6 +4,7 @@ title:  "Faith and The Scientific Method"
 date:   2017-02-28
 categories: faith religion
 published: true
+author: Ty Carlson
 ---
 
 In December of last year [The New Yorker re-published a story](http://www.newyorker.com/culture/culture-desk/a-megachurch-pastors-search-for-a-more-forgiving-faith){:target="_blank"}

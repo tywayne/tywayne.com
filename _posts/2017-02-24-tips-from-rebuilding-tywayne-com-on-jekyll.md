@@ -4,6 +4,7 @@ title:  "Tips From Rebuilding tywayne.com on Jekyll"
 date:   2017-02-24
 categories: jekyll
 published: true
+author: Ty Carlson
 ---
 
 I recently rebuilt this website on [Jekyll](https://jekyllrb.com) – a static site 

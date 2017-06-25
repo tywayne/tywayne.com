@@ -4,6 +4,7 @@ title:  "Using Google Analytics with Turbolinks"
 date:   2017-02-26
 categories: development
 published: true
+author: Ty Carlson
 ---
 
 I recently wrote about a few [roadblocks and tips I found]({{ site.baseurl }}{% post_url 2017-02-24-tips-from-rebuilding-tywayne-com-on-jekyll %}) while rebuilding this site on
