@@ -44,7 +44,7 @@ like normal curiosity.
 Specific ways that people ask a question, or better yet the *face they make* when hearing my answer.
 
 ‪Early on I encountered a pastor who made a joke about it in a sermon. He shared that his wife threw
-a party with veggie hors d'oeuvres, cucumbers kabobs and the like, and that such an act was, quote,
+a party with veggie hors d'oeuvres, cucumber kabobs and the like, and that such an act was, quote,
 "quintessentially feminine"‬.
 
 I get that there is nuance and context to the joke. I get that it was most likely an innocent attempt
