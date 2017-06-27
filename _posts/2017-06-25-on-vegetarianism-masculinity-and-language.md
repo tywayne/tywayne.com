@@ -25,7 +25,7 @@ diet was, it has had a more visibly drastic effect. I tell people all the time t
 meat has nothing to do with my weight loss, rather it is more to do with an increase in fruits/veggies
 and a closer watch and diligence in controlling portions.
 
-I told myself at the beginning that I wasn't going to a jerk about it. If I were at a function that
+I told myself at the beginning that I wasn't going to be a jerk about it. If I were at a function that
 provided food and there was no vegetarian option, I'd either eat what I could or just eat the meat
 if I were hungry enough to warrant it. As with most things in my life, the goal was to not be
 noticed. I would never say anything about it, but if people recognized and asked questions then I'd
