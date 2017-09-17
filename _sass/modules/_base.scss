@@ -56,3 +56,14 @@ blockquote {
   background-color: #fff;
   background-color: rgba( white, 0.3 );
 }
+
+.lazy-list {
+  img {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  img[data-src] {
+    opacity: 0;
+  }
+}
