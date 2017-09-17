@@ -16,25 +16,29 @@ kramdown:
   syntax_highlighter: rouge
 
 collections:
-    posts:
-        output: true
-        permalink: /blog/:title/
-    links:
-        output: false
-    portfolio:
-        output: false
-    book_reviews:
-        output: true
-        permalink: /book-reviews/:title/
+  posts:
+    output: true
+    permalink: /blog/:title/
+  links:
+    output: false
+  portfolio:
+    output: false
+  book_reviews:
+    output: true
+    permalink: /book-reviews/:title/
+  photography:
+    output: true
+    permalink: /photography/:title/
+
 
 gems:
-    - jekyll-feed
-    - jekyll-minifier
-    - jekyll-coffeescript
-    - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-minifier
+  - jekyll-coffeescript
+  - jekyll-sitemap
 exclude:
-    - Gemfile
-    - Gemfile.lock
+  - Gemfile
+  - Gemfile.lock
 
 jekyll-minifier:
-    exclude: ['htaccess', '.htaccess']
+  exclude: ['htaccess', '.htaccess']

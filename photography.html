@@ -1,0 +1,28 @@
+---
+layout: default
+title: Photography
+excerpt: 
+permalink: /photography/
+---
+
+<main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
+  <section class="measure-wide">
+    <h2 class="gray mb1 f3 fw1">photography</h2>
+    <p class="mb1">At one point in my life I really thought I'd be a photographer for a living. This was before I realized I wasn't that good, and that the only way to seemingly make money taking photographs was to shoot weddings, and that wasn't for me.</p>
+    <p class="mb4">Fast forward many years, and I've sold all of my gear except for a Yashica FX-2 that I tinker with from time to time.</p>
+    <div class="mv2 lh-copy gray measure-wide">
+      <ul class="list pl0 mt3 mb5">
+        {% assign photos = site.photography | reverse %}
+        {% for photo in photos %}
+        <li class="pv4 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
+          <a href="{{ photo.url }}" class="link blue lh-title dim">
+            <span class="db no-underline">{{ photo.title }}</span>
+            <span class="db gray">{{ photo.meta }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a class="mv3 no-underline blue dim" href="/">&larr; Home</a>
+  </section>
+</main>
