@@ -12,7 +12,7 @@ permalink: /photography/
     <p class="mb4">Fast forward many years, and I've sold all of my gear except for a Yashica FX-2 that I tinker with from time to time.</p>
     <div class="mv2 lh-copy gray measure-wide">
       <ul class="list pl0 mt3 mb5">
-        {% assign photos = site.photography | reverse %}
+        {% assign photos = site.photography %}
         {% for photo in photos %}
         <li class="pv4 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
           <a href="{{ photo.url }}" class="link blue lh-title dim">

@@ -29,7 +29,6 @@ collections:
   photography:
     output: true
     permalink: /photography/:title/
-    relative_permalinks: true
 
 
 gems:
