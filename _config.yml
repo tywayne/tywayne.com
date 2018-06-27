@@ -30,7 +30,6 @@ collections:
     output: true
     permalink: /photography/:title/
 
-
 gems:
   - jekyll-feed
   - jekyll-minifier
