@@ -1,7 +1,7 @@
 ---
 layout: post
 title: God, Our Mother
-date: 2018-07-10 16:55 -0500
+date: 2018-07-10 08:55 -0500
 categories: personal faith religion
 published: true
 author: Ty Carlson
