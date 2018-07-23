@@ -7,6 +7,7 @@ image: 'img/recent-work/plant-au-pair/1.jpg'
 img_dir: img/recent-work/plant-au-pair/
 responsibilities:
   - Ruby/Rails API
+  - UI/UX Design
   - HTML
   - (S)CSS
   - JavaScript
@@ -15,9 +16,9 @@ responsibilities:
 
 ## Description
 
-Plant Au Pair is a side project of mine. I wanted an opportunity to build out a product completely
-from scratch all on my own. This allowed me to stretch my legs into some Ruby/Rails to build out the
-API, authentication, etc.
+Plant Au Pair is a hobby side project of mine. I wanted an opportunity to build out a product
+completely from scratch all on my own. This allowed me to stretch my legs into some Ruby/Rails to
+build out the API, authentication, etc.
 
 The app itself is a tool designed to help plant lovers care for their houseplants. Users create
 records for each of their plants, setup reminders for various tasks like watering or fertilizing,
