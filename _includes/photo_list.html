@@ -8,7 +8,9 @@
 {% for image in site.static_files %}
   {% if image.path contains page.img_dir and image.path contains "-" %}
     <li class="mb4">
-      <img data-src="{{cdn_url}}{{page.img_dir}}{{image.basename}}{{image.extname}}?ver={{site.version}}" />
+      <a href="{{cdn_url}}{{page.img_dir}}{{image.basename}}{{image.extname}}?ver={{site.version}}">
+        <img data-src="{{cdn_url}}{{page.img_dir}}{{image.basename}}{{image.extname}}?ver={{site.version}}" />
+      </a>
     </li>
   {% endif %}
 {% endfor %}

@@ -22,7 +22,8 @@ collections:
   links:
     output: false
   portfolio:
-    output: false
+    output: true
+    permalink: /recent-work/:title/
   book_reviews:
     output: true
     permalink: /book-reviews/:title/
