@@ -1,0 +1,19 @@
+{
+  "name": "tywayne.com",
+  "version": "1.5.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bundle exec jekyll serve --incremental"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tywayne/tywayne.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tywayne/tywayne.com/issues"
+  },
+  "homepage": "https://github.com/tywayne/tywayne.com#readme"
+}
