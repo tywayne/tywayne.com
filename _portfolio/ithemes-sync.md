@@ -3,7 +3,7 @@ link: "https://ithemes.com/sync"
 title: iThemes Sync
 layout: portfolio
 order: 5
-image: 'img/recent-work/ithemes-sync/cover.png'
+image: 'img/recent-work/ithemes-sync/cover.jpg'
 img_dir: img/recent-work/ithemes-sync/
 responsibilities:
   - UI/UX Design

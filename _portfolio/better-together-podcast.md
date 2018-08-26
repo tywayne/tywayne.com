@@ -3,7 +3,7 @@ link: "http://bettertogether.fm"
 title: Better Together Podcast
 layout: portfolio
 order: 3
-image: img/recent-work/better-together/1.jpg
+image: img/recent-work/better-together/cover.jpg
 img_dir: img/recent-work/better-together/
 responsibilities:
   - UI/UX Design

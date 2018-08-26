@@ -3,7 +3,7 @@ link: "http://westsidechurch.org"
 title: Westside Church
 layout: portfolio
 order: 4
-image: img/recent-work/westside-church/1.jpg
+image: img/recent-work/westside-church/cover.jpg
 img_dir: img/recent-work/westside-church/
 reponsibilities:
   - HTML
