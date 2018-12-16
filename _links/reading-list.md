@@ -1,10 +1,10 @@
 ---
-link: /book-reviews
-title: Book Reviews
+link: /reading-list
+title: Reading List
 layout: null
 permalink: null
 order: 2
 external: false
 type: internal
-visible: false
+visible: true
 ---
