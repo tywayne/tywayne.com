@@ -1,6 +1,6 @@
 ---
 link: /reading-list
-title: Reading List
+title: Reading
 layout: null
 permalink: null
 order: 2

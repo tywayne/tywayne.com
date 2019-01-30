@@ -2,38 +2,38 @@
 layout: default
 ---
 
-<main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
-  <section class="measure-wide">
-    <h1 class="f3 lh-title">{{ page.title }}</h1>
-    <h2 class="f4 dib mb4 pb2 ba-2 bl-0 bt-0 br-0 b--solid b--blue">By: {{ page.author }}</h2>
-    <span class="mh0 mv4 mh4-ns mv0-ns db dib-ns pa2 rt">Read time: <strong>{% include read_time.html %}</strong></span>
+<main class="site-content container">
+  <section>
+    <h1>{{ page.title }}</h1>
+    <h2>By: {{ page.author }}</h2>
+    <span>Read time: <strong>{% include read_time.html %}</strong></span>
     {{ content }}
   </section>
 </main>
 
-<aside class="pv2 ph5-ns ph4 lh-copy gray measure-wide">
+<aside>
   {% if page.previous or page.next %}
-  <ul class="list pl0 mt3 mb5">
+  <ul>
     {% if page.next %}
-    <li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-      <a href="{{page.next.url}}" class="link blue lh-title dim">
-        <span class="db dark-gray ttu tracked ">Next</span>
-        <span class="db no-underline">{{ page.next.title}}</span>
-        <span class="db black-60">{{ page.next.author }}</span>
+    <li>
+      <a href="{{page.next.url}}">
+        <span>Next</span>
+        <span>{{ page.next.title}}</span>
+        <span>{{ page.next.author }}</span>
       </a>
     </li>
     {% endif %}
     {% if page.previous %}
-      <li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-        <a href="{{page.previous.url}}" class="link blue lh-title dim">
-          <span class="db dark-gray ttu tracked ">Prev</span>
-          <span class="db no-underline">{{ page.previous.title}}</span>
-          <span class="db black-60">{{ page.previous.author }}</span>
+      <li>
+        <a href="{{page.previous.url}}">
+          <span>Prev</span>
+          <span>{{ page.previous.title}}</span>
+          <span>{{ page.previous.author }}</span>
         </a>
       </li>
     {% endif %}
   </ul>
   {% endif %}
-  <a class="db mv3 mb0 no-underline blue dim" href="/book-reviews/">&larr; Book Reviews</a>
-  <a class="db mv3 no-underline blue dim" href="/">&larr; Home</a>
+  <a href="/book-reviews/">&larr; Book Reviews</a>
+  <a href="/">&larr; Home</a>
 </aside>

@@ -1,0 +1,57 @@
+.site-nav {
+  position: relative;
+  margin-bottom: 15vw;
+}
+
+.site-nav--scrolled {
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
+  li {
+    margin: 2.4rem 1.6rem 0 0;
+
+    @include breakpoint('small up') {
+      margin: 2.4rem 3.2rem 0 3.2rem;
+    }
+
+    &:first-child {
+      flex-grow: 1;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: .8rem;
+    text-decoration: none;
+    box-shadow: none;
+    color: $text-color;
+    font-size: 1.4rem;
+    font-weight: normal;
+
+    @include breakpoint('small up') {
+      font-size: 1.6rem;
+    }
+
+    &:hover,
+    &.selected {
+      font-weight: bold;
+      opacity: 1;
+    }
+
+    &.selected {
+      box-shadow: 0 2px 0 0 $text-color;
+    }
+  }
+}

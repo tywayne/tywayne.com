@@ -1,5 +1,16 @@
-<h1 class="ma0 pv5 ph4 ph5-ns f1">
-  <a class="no-underline gray dim fw1" href="/">
-    <img src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/avatar-256.jpg?ver={{site.version}}" srcset="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/avatar-128.jpg?ver={{site.version}} 1x, {% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/avatar-256.jpg?ver={{site.version}} 2x" class="br-100 pa2 ma0 ba b--black-10 h4 w4 dib" alt="Avatar photograph of myself, Ty Carlson">
-  </a>
-</h1>
+{% assign links = site.links | sort: 'order' %}
+
+<nav class="container--fluid site-nav">
+  <ul>
+    <li><a class="{% if page.url == '/'%}selected{% endif %}" href="/">//</a></li>
+    {% for link in links %}
+      {% if link.type == "internal" and link.visible == true  %}
+        <li>
+          <a class="{% if page.url contains link.link %}selected{% endif %}" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
+            {{link.title}}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

@@ -2,39 +2,38 @@
 layout: default
 ---
 
-<main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
-  <section class="measure-wide">
-    <a class="db mv3 mb0 no-underline blue dim" href="/resume">&larr; Recent Work</a>
-    <h1 class="f3 lh-title">{{ page.title }}</h1>
+<main role="main">
+  <section>
+    <a href="/resume">&larr; Recent Work</a>
+    <h1>{{ page.title }}</h1>
     <hr />
     {% for tag in page.responsibilities %}
-      <div class="f6 dim br-pill ba ph3 pv2 mb2 dib blue">{{tag}}</div>
+      <div>{{tag}}</div>
     {% endfor %}
     {{ content }}
   </section>
 </main>
 
-<aside class="pv2 ph5-ns ph4 lh-copy gray measure-wide">
+<aside>
   {% if page.previous or page.next %}
-  <ul class="list pl0 mt3 mb5">
+  <ul>
     {% if page.previous %}
-      <li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-        <a href="{{page.previous.url}}" class="link blue lh-title">
-          <span class="db dark-gray ttu tracked ">Prev</span>
-          <span class="db no-underline">{{ page.previous.title}}</span>
+      <li>
+        <a href="{{page.previous.url}}">
+          <span>Prev</span>
+          <span>{{ page.previous.title}}</span>
         </a>
       </li>
     {% endif %}
     {% if page.next %}
-    <li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-      <a href="{{page.next.url}}" class="link blue lh-title">
-        <span class="db dark-gray ttu tracked ">Next</span>
-        <span class="db no-underline">{{ page.next.title}}</span>
+    <li>
+      <a href="{{page.next.url}}">
+        <span>Next</span>
+        <span>{{ page.next.title}}</span>
       </a>
     </li>
     {% endif %}
   </ul>
   {% endif %}
-  <a class="db mv3 mb0 no-underline blue dim" href="/resume">&larr; Recent Work</a>
-  <a class="db mv3 no-underline blue dim" href="/">&larr; Home</a>
+  <a href="/resume">&larr; Recent Work</a>
 </aside>
