@@ -27,6 +27,9 @@ collections:
   book_reviews:
     output: true
     permalink: /book-reviews/:title/
+  reading_list:
+    output: true
+    permalink: /reading-list/:title/
   photography:
     output: true
     permalink: /photography/:title/

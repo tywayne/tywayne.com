@@ -35,10 +35,6 @@ img {
 
 .container--fluid {
   padding: 0 5%;
-
-  @include breakpoint( 'small up' ) {
-    max-width: 1200px;
-  }
 }
 
 blockquote {

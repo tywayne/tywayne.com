@@ -25,13 +25,6 @@ your career. When I explained this conundrum to a friend of mine recently, he ca
 the eye and said "you can be loyal to yourself sometimes, too." The truth of that simple statement
 will stick with me for a while.
 
----
-
-{: .tc}
-![Datebox]({{ site.url }}/assets/img/datebox.svg){: .mv4 .mw5 }
-
----
-
 At the same time that I was fleshing out what I wanted my future to look like, I stumbled upon a
 local company named [Datebox](https://www.getdatebox.com){:target="_blank" } who were doing some
 really meaningful work by helping couples strengthen their relationship. They offer a monthly

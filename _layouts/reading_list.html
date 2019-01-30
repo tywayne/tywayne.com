@@ -5,8 +5,6 @@ layout: default
 <main class="site-content container">
   <section>
     <h2>{{ page.title }}</h2>
-    <p>{{ page.date | date: "%b %d, %Y" }}</p>
-    <span><small>Read time: <strong>{% include read_time.html %}</strong></small></span>
     <hr />
     {{ content }}
   </section>
@@ -28,6 +26,6 @@ layout: default
       {% endif %}
     </ul>
     {% endif %}
-    <a href="/blog">&larr; Blog</a>
+    <a href="/reading-list">&larr; Reading List</a>
   </aside>
 </main>

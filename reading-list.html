@@ -9,30 +9,12 @@ permalink: /reading-list/
   <section>
     <h2>reading list</h2>
     <p>List of books I've read, grouped by year, in reverse chronological order.</p>
-    <ul>
-      {% for year in site.data.reading-list %}
-        <li><a href="#{{year.year}}">{{year.year}}</a></li> {%unless forloop.last%}|{%endunless%}
+    <ul class="list">
+      {% assign years = site.reading_list | reverse %}
+      {% for year in years %}
+        <li><a href="/reading-list/{{year.title}}">{{year.title}}</a></li>
       {% endfor %}
     </ul>
-    <hr>
-    <div>
-      {% for year in site.data.reading-list %}
-      <h2 id="{{year.year}}">
-        {{year.year}} <span><em>({{year.books.size}})</em></span>
-      </h2>
-      <a href="#top">&uarr; back to top</a>
-      <ul>
-        {% assign books = year.books | reverse %}
-        {% for book in books %}
-          <li>
-            <h3>{{book.title}}</h3>
-            | <em>{{book.author}}</em>
-          </li>
-        {% endfor %}
-      </ul>
-      {%unless forloop.last%}<hr>{%endunless%}
-      {% endfor %}
-    </div>
     <a href="/">&larr; Home</a>
   </section>
 </main>
