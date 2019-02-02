@@ -5,35 +5,31 @@ excerpt: "I am a Front End Developer with almost a decade of experience working 
 permalink: /resume/
 ---
 
-<main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
-  <a class="mv3 no-underline blue dim" href="/">&larr; Home</a>
-
-  <section class="w-100 w-75-l">
-    <h2 class="f2 mb0">Résumé</h2>
-    <p class="measure-wide">
-      I am a Front End Developer with almost a decade of experience working in user interface development for a variety of industries.
-    </p>
-    <a class="f6 link dim br2 ph3 pv2 mb2 mr2 dib white bg-blue" href="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/TyCarlson_Developer_Resume_082618.pdf" target="_blank">View PDF</a>
-    <a class="f6 link dim br2 ph3 pv2 mb2 dib white bg-blue" href="https://www.github.com/tywayne" target="_blank">View Github Profile</a>
+<main class="site-content container">
+  <section>
+    <h2>résumé</h2>
+    <p>I am a Front End Developer with almost a decade of experience working in user interface development for a variety of industries.</p>
+    <a href="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/TyCarlson_Developer_Resume_082618.pdf" target="_blank">View PDF</a>
+    <a href="https://www.github.com/tywayne" target="_blank">View Github Profile</a>
   </section>
 
   <hr />
 
-  <section class="w-100 w-50-l">
-    <h2 class="f2 mb0">Recent Work</h2>
-    <div class="mb4">
-      <ul class="pl0 list cf">
+  <section>
+    <h3>Recent Work</h2>
+    <div>
+      <ul class="list--recent-work">
         {% assign portfolio_items = site.portfolio | sort: 'order' %}
         {% for portfolio_item in portfolio_items %}
-        <li class="fl w-100 w-50-l border-box db pr3 mb3">
-          <a class="db no-underline blue dim" href="{{ portfolio_item.url }}">
-            <img class="db mb0 bb bw2 b--blue" src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/{{ portfolio_item.image }}?ver={{site.version}}" />
-            <span class="project_title">{{ portfolio_item.title}}</span>
+        <li>
+          <a href="{{ portfolio_item.url}}">
+            <img src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/{{ portfolio_item.image }}?ver={{site.version}}" />
+            <span>{{ portfolio_item.title}}</span>
           </a>
         </li>
         {% endfor %}
       </ul>
     </div>
   </section>
-  <a class="mv3 no-underline blue dim" href="/">&larr; Home</a>
+  <a class="take-me-back" href="/">&larr; Home</a>
 </main>

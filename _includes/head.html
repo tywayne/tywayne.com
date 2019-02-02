@@ -38,4 +38,25 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include analytics.html %}
   {% endif %}
+
+  <style>
+    body.site{
+      position: relative;
+    }
+
+    body.site:after {
+      z-index: -1;
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: .5;
+      background-image: url("{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/img/bg.png?ver={{site.version}}");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>

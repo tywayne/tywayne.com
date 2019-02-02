@@ -19,7 +19,13 @@
   }
 
   p {
-    margin: 0;
+    margin: 0 0 2rem 0;
+    padding: 0 3rem;
+    line-height: 1.2;
+
+    @include breakpoint( 'small up' ) {
+      padding: 0;
+    }
   }
 }
 

@@ -2,38 +2,33 @@
 layout: default
 ---
 
-<main role="main">
+<main class="site-content container">
   <section>
-    <a href="/resume">&larr; Recent Work</a>
     <h1>{{ page.title }}</h1>
+    <a href="/resume">&larr; Recent Work</a>
     <hr />
     {% for tag in page.responsibilities %}
-      <div>{{tag}}</div>
+      <div class="tag">{{tag}}</div>
     {% endfor %}
     {{ content }}
   </section>
+
+  <aside>
+    {% if page.previous or page.next %}
+      <ul>
+        {% if page.next %}
+          <li>
+            <a href="{{page.next.url}}">Next &mdash; {{ page.next.title}}</a>
+          </li>
+        {% endif %}
+        {% if page.previous %}
+          <li>
+            <a href="{{page.previous.url}}">Prev &mdash; {{ page.previous.title}}</a>
+          </li>
+        {% endif %}
+      </ul>
+    {% endif %}
+    <a href="/resume" class="take-me-back">&larr; Recent Work</a>
+  </aside>
 </main>
 
-<aside>
-  {% if page.previous or page.next %}
-  <ul>
-    {% if page.previous %}
-      <li>
-        <a href="{{page.previous.url}}">
-          <span>Prev</span>
-          <span>{{ page.previous.title}}</span>
-        </a>
-      </li>
-    {% endif %}
-    {% if page.next %}
-    <li>
-      <a href="{{page.next.url}}">
-        <span>Next</span>
-        <span>{{ page.next.title}}</span>
-      </a>
-    </li>
-    {% endif %}
-  </ul>
-  {% endif %}
-  <a href="/resume">&larr; Recent Work</a>
-</aside>

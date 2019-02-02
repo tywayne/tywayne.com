@@ -76,7 +76,7 @@ blockquote {
 hr {
   border: none;
   border-bottom: 1px dashed #d1d6d9;
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 main {
@@ -90,4 +90,13 @@ main {
       opacity: .7;
     }
   }
+}
+
+.take-me-back {
+  margin-top: 8rem;
+  display:inline-block;
+}
+
+.take-me-back + .take-me-back {
+  margin-top: 4rem;
 }

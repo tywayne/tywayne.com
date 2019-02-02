@@ -9,31 +9,24 @@ layout: default
     <span>Read time: <strong>{% include read_time.html %}</strong></span>
     {{ content }}
   </section>
-</main>
 
-<aside>
-  {% if page.previous or page.next %}
-  <ul>
-    {% if page.next %}
-    <li>
-      <a href="{{page.next.url}}">
-        <span>Next</span>
-        <span>{{ page.next.title}}</span>
-        <span>{{ page.next.author }}</span>
-      </a>
-    </li>
+  <aside>
+    {% if page.previous or page.next %}
+      <ul class="list">
+        {% if page.previous %}
+          <li>
+            <a href="{{page.previous.url}}">Prev &mdash; {{ page.previous.title}}</a>
+            <p><small>{{ page.previous.date | date: "%b %d, %Y"}}</span>
+          </li>
+        {% endif %}
+        {% if page.next %}
+          <li>
+            <a href="{{page.next.url}}">Next &mdash; {{ page.next.title}}</a>
+            <p><small>{{ page.next.date | date: "%b %d, %Y"}}</small></p>
+          </li>
+        {% endif %}
+      </ul>
     {% endif %}
-    {% if page.previous %}
-      <li>
-        <a href="{{page.previous.url}}">
-          <span>Prev</span>
-          <span>{{ page.previous.title}}</span>
-          <span>{{ page.previous.author }}</span>
-        </a>
-      </li>
-    {% endif %}
-  </ul>
-  {% endif %}
-  <a href="/book-reviews/">&larr; Book Reviews</a>
-  <a href="/">&larr; Home</a>
-</aside>
+    <a href="/book-reviews/" class="take-me-back">&larr; Book Reviews</a>
+  </aside>
+</main>
