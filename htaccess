@@ -8,6 +8,10 @@ permalink: .htaccess
   RewriteRule ^(.*)$ https://tywayne.com/$1 [R=301,L]
 </IfModule>
 
+<FilesMatch ".(eot|ttf|otf|woff)$">
+	Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
 <IfModule mod_expires.c>
   ExpiresActive on
 
