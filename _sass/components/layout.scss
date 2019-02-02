@@ -1,0 +1,102 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'iA Writer Duospace', 'Inconsolata', 'source-code-pro', Menlo, Consolas;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $background-color;
+  color: $text-color;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0 5%;
+
+  @include breakpoint( 'small up' ) {
+    padding: 0 5%;
+    max-width: 768px;
+  }
+}
+
+.container--fluid {
+  padding: 0 5%;
+}
+
+blockquote {
+  background-color: lighten($background-color, 5%);
+  border-left: 3px solid $text-color;
+  padding: 2rem;
+  margin: 0 0 1.6rem 0;
+
+  p {
+    margin: 0 0 1.6rem 0
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.rt {
+  background-color: $text-color;
+  background-color: rgba( $text-color, 0.3 );
+}
+
+.lazy-list {
+  img {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  img[data-src] {
+    opacity: 0;
+  }
+}
+
+.turbolinks-progress-bar {
+  height: 5px;
+  background-color: $text-color;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px dashed #d1d6d9;
+  margin: 4rem 0;
+}
+
+main {
+  a {
+    color: $text-color;
+    text-decoration: none;
+    transition: opacity .15s ease-in;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+  }
+}
+
+.take-me-back {
+  margin-top: 8rem;
+  display:inline-block;
+}
+
+.take-me-back + .take-me-back {
+  margin-top: 4rem;
+}

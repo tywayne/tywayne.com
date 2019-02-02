@@ -2,39 +2,33 @@
 layout: default
 ---
 
-<main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
-  <section class="measure-wide">
-    <a class="db mv3 mb0 no-underline blue dim" href="/resume">&larr; Recent Work</a>
-    <h1 class="f3 lh-title">{{ page.title }}</h1>
+<main class="site-content container">
+  <section>
+    <h1>{{ page.title }}</h1>
+    <a href="/resume">&larr; Recent Work</a>
     <hr />
     {% for tag in page.responsibilities %}
-      <div class="f6 dim br-pill ba ph3 pv2 mb2 dib blue">{{tag}}</div>
+      <div class="tag">{{tag}}</div>
     {% endfor %}
     {{ content }}
   </section>
+
+  <aside>
+    {% if page.previous or page.next %}
+      <ul>
+        {% if page.next %}
+          <li>
+            <a href="{{page.next.url}}">Next &mdash; {{ page.next.title}}</a>
+          </li>
+        {% endif %}
+        {% if page.previous %}
+          <li>
+            <a href="{{page.previous.url}}">Prev &mdash; {{ page.previous.title}}</a>
+          </li>
+        {% endif %}
+      </ul>
+    {% endif %}
+    <a href="/resume" class="take-me-back">&larr; Recent Work</a>
+  </aside>
 </main>
 
-<aside class="pv2 ph5-ns ph4 lh-copy gray measure-wide">
-  {% if page.previous or page.next %}
-  <ul class="list pl0 mt3 mb5">
-    {% if page.previous %}
-      <li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-        <a href="{{page.previous.url}}" class="link blue lh-title">
-          <span class="db dark-gray ttu tracked ">Prev</span>
-          <span class="db no-underline">{{ page.previous.title}}</span>
-        </a>
-      </li>
-    {% endif %}
-    {% if page.next %}
-    <li class="pv3 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-      <a href="{{page.next.url}}" class="link blue lh-title">
-        <span class="db dark-gray ttu tracked ">Next</span>
-        <span class="db no-underline">{{ page.next.title}}</span>
-      </a>
-    </li>
-    {% endif %}
-  </ul>
-  {% endif %}
-  <a class="db mv3 mb0 no-underline blue dim" href="/resume">&larr; Recent Work</a>
-  <a class="db mv3 no-underline blue dim" href="/">&larr; Home</a>
-</aside>

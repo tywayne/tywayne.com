@@ -1,0 +1,22 @@
+$small-screen-size: 768;
+$medium-screen-size: 960;
+$large-screen-size: 1200;
+
+$breakpoint-map: (
+  "small"       : "(max-width: #{$small-screen-size - 1}px)",
+  "small up"    : "(min-width: #{$small-screen-size}px)",
+  "medium"      : "(max-width: #{$medium-screen-size - 1}px)",
+  "medium only" : "(min-width: #{$small-screen-size}px) and (max-width: #{$medium-screen-size -  1}px)",
+  "medium up"   : "(min-width: #{$medium-screen-size}px)",
+  "large"       : "(max-width: #{$large-screen-size - 1}px)",
+  "large up"    : "(min-width: #{$large-screen-size}px)"
+);
+
+// ------------------------------------------------------------
+// breakpoint
+// - uses the variable set in breakpoint map above`
+// - defaults to small up
+// ------------------------------------------------------------
+@mixin breakpoint( $size: 'small up' ) {
+  @media #{map-get($breakpoint-map, $size )} { @content; }
+}

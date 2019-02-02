@@ -4,13 +4,11 @@
   {% capture cdn_url%}{{site.baseurl}}/assets/{%endcapture%}
 {% endif %}
 
-<ul class="lazy-list list ma0 pa0">
+<ul class="lazy-list list">
 {% for image in site.static_files %}
   {% if image.path contains page.img_dir and image.path contains "-" %}
-    <li class="mb4">
-      <a href="{{cdn_url}}{{page.img_dir}}{{image.basename}}{{image.extname}}?ver={{site.version}}">
-        <img data-src="{{cdn_url}}{{page.img_dir}}{{image.basename}}{{image.extname}}?ver={{site.version}}" />
-      </a>
+    <li>
+      <img data-src="{{cdn_url}}{{page.img_dir}}{{image.basename}}{{image.extname}}?ver={{site.version}}" />
     </li>
   {% endif %}
 {% endfor %}

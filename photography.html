@@ -5,24 +5,22 @@ excerpt: Be forewarned, I'm an amateur photographer at best. I bought an old Yas
 permalink: /photography/
 ---
 
-<main class="pv2 ph5-ns ph4 lh-copy gray" role="main">
-  <section class="measure-wide">
-    <h2 class="gray mb1 f3 fw1">photography</h2>
-    <p class="mb1">Be forewarned, I'm an amateur photographer at best. I bought an old <a href="http://camera-wiki.org/wiki/Yashica_FX-2" target="_blank">Yashica FX-2</a> on eBay to try out film, and quickly learned how expensive it is to develop film.</p>
-    <p class="mb4">I've decided to shoot, develop, and post one roll per month as both a way to drive me to be creative every month, and also limit the amount of money I spend on this hobby.</p>
-    <div class="mv2 lh-copy gray measure-wide">
-      <ul class="list pl0 mt3 mb5">
+<main class="site-content container">
+  <section>
+    <h2>photography</h2>
+    <p>Be forewarned, I'm an amateur photographer at best. I bought an old <a href="http://camera-wiki.org/wiki/Yashica_FX-2" target="_blank">Yashica FX-2</a> on eBay to try out film, and quickly learned how expensive it is to develop film.</p>
+    <p>I've decided to shoot, develop, and post one roll per month as both a way to drive me to be creative every month, and also limit the amount of money I spend on this hobby.</p>
+    <div>
+      <ul class="list">
         {% assign photos = site.photography | reverse %}
         {% for photo in photos %}
-        <li class="pv4 ba bl-0 {% if forloop.first != true %}bt-0{% endif %} br-0 b--dotted b--black-30">
-          <a href="{{ photo.url }}" class="link blue lh-title dim">
-            <span class="db no-underline">{{ photo.title }}</span>
-            <span class="db gray">{{ photo.meta }}</span>
-          </a>
+        <li>
+          <a href="{{ photo.url }}">{{ photo.title }}</a>
+          <p><small>{{ photo.meta }}</small></p>
         </li>
         {% endfor %}
       </ul>
     </div>
-    <a class="mv3 no-underline blue dim" href="/">&larr; Home</a>
+    <a href="/" class="take-me-back">&larr; Home</a>
   </section>
 </main>

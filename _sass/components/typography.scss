@@ -1,0 +1,126 @@
+/* Measure is limited to ~66 characters */
+.measure {
+  max-width: 30em;
+}
+
+/* Measure is limited to ~80 characters */
+.measure-wide {
+  max-width: 34em;
+}
+
+/* Measure is limited to ~45 characters */
+.measure-narrow {
+  max-width: 20em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+  margin: 0;
+  margin-bottom: 2.4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  @include breakpoint( 'small up' ) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 1;
+  @include breakpoint( 'small up' ) {
+    font-size: 3.2rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  @include breakpoint( 'small up' ) {
+    font-size: 2.4rem;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+  @include breakpoint( 'small up' ) {
+    font-size: 1.8rem;
+  }
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0;
+  margin-bottom: 1.6rem;
+}
+
+a {
+  color: $text-color;
+  box-shadow: 0 2px 0 $text-color;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity .2s ease-in;
+  font-weight: bold;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:focus {
+    opacity: .6;
+    outline: lighten($background-color, 10%) dotted 1px;
+  }
+}
+
+.footer-blurb {
+  line-height: 1.2;
+}
+
+ul {
+  margin: 2.4rem 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.4rem 0;
+    line-height: 1.6;
+
+    a {
+      img {
+        border: none;
+        display: block;
+        margin: 0;
+      }
+    }
+  }
+
+
+  &.list--inline {
+    display:flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 1.6rem 1.6rem 0;
+    }
+  }
+
+  &.list--recent-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      flex-basis: 48%;
+      margin-bottom: 4rem;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 ---
 link: /photography
-title: Photography
+title: Photo
 layout: null
 permalink: null
 order: 3

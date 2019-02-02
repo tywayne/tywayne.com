@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 {% include head.html %}
-<body class="pb5 min-vh-100">
+<body class="site">
   {% include header.html %}
   {{ content }}
+  {% include footer.html %}
 </body>
 </html>
