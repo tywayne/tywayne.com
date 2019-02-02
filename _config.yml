@@ -2,7 +2,7 @@ title: Ty Carlson | designer, developer, husband, and friend
 email: tywayne@gmail.com
 description: My name is Ty Carlson and I am a designer, developer, husband, father, and friend.
 
-version: '2.0.0'
+version: '2.0.1'
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tywayne.com"
