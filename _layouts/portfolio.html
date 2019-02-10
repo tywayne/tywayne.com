@@ -16,14 +16,14 @@ layout: default
   <aside>
     {% if page.previous or page.next %}
       <ul>
-        {% if page.next %}
-          <li>
-            <a href="{{page.next.url}}">Next &mdash; {{ page.next.title}}</a>
-          </li>
-        {% endif %}
         {% if page.previous %}
           <li>
-            <a href="{{page.previous.url}}">Prev &mdash; {{ page.previous.title}}</a>
+            <a href="{{page.previous.url}}">&larr; {{ page.previous.title}}</a>
+          </li>
+        {% endif %}
+        {% if page.next %}
+          <li>
+            <a href="{{page.next.url}}">{{ page.next.title}} &rarr; </a>
           </li>
         {% endif %}
       </ul>
