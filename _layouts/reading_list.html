@@ -9,6 +9,36 @@ layout: default
     {{ content }}
   </section>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{page.url | absolute_url}}"
+      },
+      "headline": "Reading List | {{ page.title }}",
+      "image": [
+        "{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/{%if page.cover_image%}{{page.cover_img}}{%else%}avatar_tycarlson.jpg{%endif%}",
+       ],
+      "datePublished": "{{page.date}}",
+      "dateModified": "{{page.date}}",
+      "author": {
+        "@type": "Person",
+        "name": "{%if page.author%}{{page.author}}{%else%}Ty Carlson{%endif%}"
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "tywayne.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/avatar_tycarlson.jpg"
+        }
+      },
+      "description": "{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}"
+    }
+  </script>
+
   <aside>
     {% if page.previous or page.next %}
     <ul class="list">
