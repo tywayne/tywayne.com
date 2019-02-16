@@ -39,6 +39,7 @@ plugins:
   - jekyll-minifier
   - jekyll-coffeescript
   - jekyll-sitemap
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
