@@ -5,16 +5,15 @@
 
 code {
   &.highlighter-rouge {
-    background-color: lighten($background-color, 15%);
+    background-color: var(--body-background);
     padding: 2px 4px;
     border-radius: 3px;
   }
 }
 
 pre {
-  background-color: #fff;
-  background-color: lighten($background-color, 4%);
-  border-left: 3px solid $text-color;
+  background-color: var(--body-background-alt);
+  border-left: 3px solid var(--body-foreground);
   padding: 1.6rem;
   white-space: pre;
   overflow-x: scroll;

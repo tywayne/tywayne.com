@@ -9,8 +9,8 @@ body {
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $background-color;
-  color: $text-color;
+  background: var(--body-background);
+  color: var(--body-foreground);
   min-height: 100vh;
 }
 
@@ -38,8 +38,8 @@ img {
 }
 
 blockquote {
-  background-color: lighten($background-color, 5%);
-  border-left: 3px solid $text-color;
+  background-color: var(--body-background-alt);
+  border-left: 3px solid var(--body-foreground);
   padding: 2rem;
   margin: 0 0 1.6rem 0;
 
@@ -50,11 +50,6 @@ blockquote {
   p:last-child {
     margin-bottom: 0;
   }
-}
-
-.rt {
-  background-color: $text-color;
-  background-color: rgba( $text-color, 0.3 );
 }
 
 .lazy-list {
@@ -70,7 +65,7 @@ blockquote {
 
 .turbolinks-progress-bar {
   height: 5px;
-  background-color: $text-color;
+  background-color: var(--body-foreground);
 }
 
 hr {
@@ -81,7 +76,7 @@ hr {
 
 main {
   a {
-    color: $text-color;
+    color: var(--body-foreground);
     text-decoration: none;
     transition: opacity .15s ease-in;
 

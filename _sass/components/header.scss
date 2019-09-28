@@ -36,7 +36,7 @@
     padding: .8rem;
     text-decoration: none;
     box-shadow: none;
-    color: $text-color;
+    color: var(--body-foreground);
     font-size: 1.4rem;
     font-weight: normal;
 
@@ -51,7 +51,7 @@
     }
 
     &.selected {
-      box-shadow: 0 2px 0 0 $text-color;
+      box-shadow: 0 2px 0 0 var(--body-foreground);
     }
   }
 }

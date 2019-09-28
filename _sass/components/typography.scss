@@ -63,8 +63,8 @@ p {
 }
 
 a {
-  color: $text-color;
-  box-shadow: 0 2px 0 $text-color;
+  color: var(--body-foreground);
+  box-shadow: 0 2px 0 var(--body-foreground);
   text-decoration: none;
   opacity: 1;
   transition: opacity .2s ease-in;
@@ -76,7 +76,7 @@ a {
 
   &:focus {
     opacity: .6;
-    outline: lighten($background-color, 10%) dotted 1px;
+    outline: var(--body-background--alt) dotted 1px;
   }
 }
 
