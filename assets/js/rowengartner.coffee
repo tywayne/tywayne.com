@@ -24,8 +24,5 @@ partsTwo = [ 'verter', 'boozer', 'gagger', 'grueter', 'grooten', 'gardener', 'ga
 henry = new Switcher one: partsOne, two: partsTwo
 henry.refreshParts()
 
-document.addEventListener 'click', ->
-  henry.refreshParts()
-  
-document.addEventListener 'touchstart', ->
+document.addEventListener 'click touchstart', ->
   henry.refreshParts()
