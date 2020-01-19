@@ -26,4 +26,4 @@ document.addEventListener "turbolinks:load", (event) ->
       img.removeAttribute 'data-src'
 
   footer_blurb_el = document.querySelector('.footer-blurb')
-  footer_blurb_el.innerHTML = FOOTER_BLURB_ARRAY[Math.floor(Math.random() * Math.floor(FOOTER_BLURB_ARRAY.length))]
+  footer_blurb_el && footer_blurb_el.innerHTML = FOOTER_BLURB_ARRAY[Math.floor(Math.random() * Math.floor(FOOTER_BLURB_ARRAY.length))]

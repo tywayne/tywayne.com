@@ -51,8 +51,10 @@
     {{ critical | scssify }}
   </style>
 
-	<script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/turbolinks.js?ver={{site.version}}" defer></script>
-	<script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/app.js?ver={{site.version}}" defer></script>
+  {% unless page.layout == 'rowengartner' %}
+    <script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/turbolinks.js?ver={{site.version}}" defer></script>
+    <script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/app.js?ver={{site.version}}" defer></script>
+  {% endunless %}
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include analytics.html %}

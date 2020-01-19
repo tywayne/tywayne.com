@@ -3,15 +3,18 @@
 
 class Switcher
   constructor: (options) ->
-    {@one, @two } = options
+    {@one, @two} = options
 
   refreshParts: ->
     this.setParts this.getParts()
 
+  getRandom: (arr) ->
+    Math.floor( Math.random() * arr.length )
+
   getParts: ->
     {
-      one: @one[ Math.floor( Math.random() * @one.length ) ],
-      two: @two[ Math.floor( Math.random() * @two.length ) ],
+      one: @one[ this.getRandom(@one) ],
+      two: @two[ this.getRandom(@two) ]
     }
 
   setParts: ( parts ) ->
