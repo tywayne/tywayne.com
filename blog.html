@@ -1,24 +1,6 @@
 ---
-layout: default
+layout: posts
 title: Blog
 excerpt: "I don't blog much, but I want to change that. Expect to see ramblings about hobbies, fatherhood, design, and development."
 permalink: /blog/
 ---
-
-<main class="site-content container">
-  <section>
-    <h2>blog</h2>
-    <p>I don't blog much, but I want to change that. Expect to see ramblings about hobbies, fatherhood, design, and development.</p>
-    <div>
-      <ul class="list">
-        {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <p><small>{{ post.date | date: "%b %d, %Y"}}</small></p>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <a href="/" class="take-me-back">&larr; Home</a>
-  </section>
-</main>

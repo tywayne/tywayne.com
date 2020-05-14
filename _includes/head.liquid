@@ -28,7 +28,6 @@
   <meta name="twitter:image" content="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/{{page.cover_img}}">
   <meta name="twitter:card" content="{{ page.twitter_card | default: 'summary_large_image' }}">
 
-  {% include fonts.html %}
   <style type="text/css">
     :root {
       --body-foreground: #242424;
@@ -52,7 +51,6 @@
   </style>
 
   {% unless page.layout == 'rowengartner' %}
-    <script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/turbolinks.js?ver={{site.version}}" defer></script>
     <script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/app.js?ver={{site.version}}" defer></script>
   {% endunless %}
 

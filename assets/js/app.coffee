@@ -16,7 +16,7 @@ window.FOOTER_BLURB_ARRAY = [
   'Meat is not masculine'
 ];
 
-document.addEventListener "turbolinks:load", (event) ->
+document.addEventListener "DOMContentLoaded", (event) ->
   if typeof ga is 'function'
     ga 'send', 'pageview', location.pathname
 

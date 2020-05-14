@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "bundle exec jekyll serve --incremental"
+    "dev": "bundle exec jekyll serve"
   },
   "repository": {
     "type": "git",
