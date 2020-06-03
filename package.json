@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "bundle exec jekyll serve"
+    "dev": "bundle exec jekyll serve",
+    "build":"bundle exec jekyll build",
+    "build:serve":"bundle exec jekyll build && serve ./_site"
   },
   "repository": {
     "type": "git",
