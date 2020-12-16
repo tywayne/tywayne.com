@@ -7,7 +7,7 @@ version: '2.0.2'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tywayne.com"
 cdn_url: "https://dzgsio58p4nbe.cloudfront.net"
-google_analytics: UA-11264448-3
+google_analytics: "G-L0NDWZ9REM"
 
 # Build settings
 markdown: kramdown
