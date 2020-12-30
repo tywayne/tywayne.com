@@ -3,14 +3,16 @@
 <nav class="container--fluid site-nav">
   <ul>
     <li><a class="{% if page.url == '/'%}selected{% endif %}" href="/">//</a></li>
-    {% for link in links %}
-      {% if link.type == "internal" and link.visible == true  %}
-        <li>
-          <a class="{% if page.url contains link.link %}selected{% endif %}" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
-            {{link.title}}
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
+    {% unless page.url contains '/midfirst' %}
+      {% for link in links %}
+        {% if link.type == "internal" and link.visible == true  %}
+          <li>
+            <a class="{% if page.url contains link.link %}selected{% endif %}" href="{{link.link}}" {% if link.external %}target="_blank"{% endif %}>
+              {{link.title}}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endunless %}
   </ul>
 </nav>
