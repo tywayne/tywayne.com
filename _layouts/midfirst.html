@@ -1,0 +1,35 @@
+---
+  layout: default
+  links:
+  - label: Intro
+    slug: intro
+  - label: Resumé
+    slug: resume
+  - label: Principles
+    slug: principles
+  - label: Projects
+    slug: projects
+  - label: Reading
+    slug: reading
+---
+
+<main class="site-content container">
+  <section>
+    <h2>{{ page.title }}</h2>
+    <div class="measure-wide">
+      <ul class="list list--inline list--nav">
+        {% for link in layout.links %}
+          <li class="{% if page.url contains link.slug or link.slug == 'intro' and page.url == '/midfirst/' %}active{% endif %}">
+            <a href="/midfirst/{% unless link.slug == 'intro' %}{{ link.slug }}{% endunless %}">{{ link.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="measure-wide">
+      {{ content }}
+    </div>
+  </section>
+</main>

@@ -123,4 +123,18 @@ ul {
       margin-bottom: 4rem;
     }
   }
+
+  &.list--nav {
+    li {
+      a {
+        box-shadow: none;
+      }
+
+      &.active {
+        a {
+          box-shadow: 0 2px 0 var(--body-foreground);
+        }
+      }
+    }
+  }
 }
