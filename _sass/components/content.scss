@@ -13,3 +13,28 @@
     min-height: unset;
   }
 }
+
+.img-grid {
+  li {
+    margin: 0 16px 16px 0;
+    max-width: calc(33.33333% - 16px);
+    width: calc(33.33333% - 16px);
+  }
+
+  a {
+    display: block;
+    margin: 0;
+    position: relative;
+    padding-top: 85%;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

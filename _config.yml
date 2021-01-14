@@ -2,7 +2,7 @@ title: Ty Carlson | designer, developer, husband, and friend
 email: tywayne@gmail.com
 description: My wife Lauren and I are raising my son Liam in Oklahoma City, OK – where the wind comes sweepin’ down the plain, and the wavin’ wheat can sure smell sweet, when the wind comes right behind the rain
 
-version: '2.0.2'
+version: '2.1.0'
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tywayne.com"
