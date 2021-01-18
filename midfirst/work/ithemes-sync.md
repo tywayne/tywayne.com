@@ -27,4 +27,4 @@ profitable product.
 {% endfor %}
 </ul>
 
-<a href="/midfirst/projects" class="take-me-back">&larr; All Projects</a>
+<a href="/midfirst/work" class="take-me-back">&larr; All Work</a>

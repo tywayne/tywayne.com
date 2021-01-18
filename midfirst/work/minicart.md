@@ -21,8 +21,6 @@ both designer and developer in getting started.
 
 Sites in use: [Ugmonk](https://ugmonk.com){:target="_blank"}, [Comrad](https://comradsocks.com){:target="_blank"}, [Knockaround](https://knockaround.com/){:target="_blank"}
 
-<!-- <img src="{{ cdn_url }}/img/hobbies/bar-soaps.jpg?ver={{site.version}}"> -->
-
 <ul class="img-grid list list--inline">
 {% for image in site.static_files %}
   {% if image.basename contains "minicart-" %}
@@ -36,4 +34,4 @@ Sites in use: [Ugmonk](https://ugmonk.com){:target="_blank"}, [Comrad](https://c
 </ul>
 
 
-<a href="/midfirst/projects" class="take-me-back">&larr; All Projects</a>
+<a href="/midfirst/work" class="take-me-back">&larr; All Work</a>

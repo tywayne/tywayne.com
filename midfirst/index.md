@@ -5,12 +5,7 @@ published: true
 date: 2020-12-30T21:53:07-06:00
 ---
 
-{% if jekyll.environment == 'production'%}
-  {% capture cdn_url%}{{site.cdn_url}}{%endcapture%}
-{% else %}
-  {% capture cdn_url%}{{ site.url }}{{site.baseurl}}/assets{%endcapture%}
-{% endif %}
-
+{% capture cdn_url%}{{ site.url }}{{site.baseurl}}/assets{%endcapture%}
 
 I am a designer and developer with a decade of experience in building websites, products,
 and systems in a variety of industries.
