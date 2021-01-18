@@ -18,14 +18,14 @@
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
   <meta property="og:url" content="{% if page.url %}{{ page.url | absolute_url }}{% else %}{{site.url | absolute_url }}{% endif %}">
   <meta property="og:site_name" content="ty carlson">
-  <meta property="og:image" content="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/{{page.cover_img}}">
+  <meta property="og:image" content="/assets/{{page.cover_img}}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
   <meta name="twitter:title" content="{% if page.title %}Ty Carlson | {{ page_title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
   <meta name="twitter:site" content="@tywayne">
   <meta name="twitter:creator" content="@tywayne">
-  <meta name="twitter:image" content="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/{{page.cover_img}}">
+  <meta name="twitter:image" content="/assets/{{page.cover_img}}">
   <meta name="twitter:card" content="{{ page.twitter_card | default: 'summary_large_image' }}">
 
   <style type="text/css">
@@ -51,7 +51,7 @@
   </style>
 
   {% unless page.layout == 'rowengartner' %}
-    <script src="{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/js/app.js?ver={{site.version}}" defer></script>
+    <script src="/assets/js/app.js?ver={{site.version}}" defer></script>
   {% endunless %}
 
   {% if jekyll.environment == 'production' and site.google_analytics %}

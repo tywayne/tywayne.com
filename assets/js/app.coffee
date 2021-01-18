@@ -6,7 +6,6 @@ window.FOOTER_BLURB_ARRAY = [
   'Blessed are thou among women',
   'Men of quality fight for gender equality',
   'Public verdict not a boast',
-  'Every billionaire is a policy failure',
   'Assume best intentions',
   'Pray for us, sinners now and at the hour of our death',
   'Meat is not masculine'
