@@ -7,7 +7,7 @@ date: 2020-12-30T21:53:07-06:00
 
 ### Maiden Home Order Management
 
-<img data-src="{{ site.url }}{{site.baseurl}}/assets/img/maiden-home-2.png?ver={{site.version}}" />
+<img data-src="/assets/img/maiden-home-2.png?ver={{site.version}}" />
 
 [View Project](/midfirst/work/maiden-home)
 
@@ -15,7 +15,7 @@ date: 2020-12-30T21:53:07-06:00
 
 ### Rehash MiniCart
 
-<img data-src="{{ site.url }}{{site.baseurl}}/assets/img/minicart-1-ugmonk.png?ver={{site.version}}" />
+<img data-src="/assets/img/minicart-1-ugmonk.png?ver={{site.version}}" />
 
 [View Project](/midfirst/work/minicart)
 
@@ -24,7 +24,7 @@ date: 2020-12-30T21:53:07-06:00
 
 ### Plant Au Pair
 
-<img data-src="{{ site.url }}{{site.baseurl}}/assets/img/plant-au-pair-1.jpg?ver={{site.version}}" />
+<img data-src="/assets/img/plant-au-pair-1.jpg?ver={{site.version}}" />
 
 [View Project](/midfirst/work/plant-au-pair)
 
@@ -33,7 +33,7 @@ date: 2020-12-30T21:53:07-06:00
 
 ### Datebox Design System
 
-<img data-src="{{ site.url }}{{site.baseurl}}/assets/img/datebox-3.gif?ver={{site.version}}" />
+<img data-src="/assets/img/datebox-3.gif?ver={{site.version}}" />
 
 [View Project](/midfirst/work/datebox)
 
@@ -41,7 +41,7 @@ date: 2020-12-30T21:53:07-06:00
 
 ### iThemes Sync
 
-<img data-src="{{ site.url }}{{site.baseurl}}/assets/img/sync-2.jpg?ver={{site.version}}" />
+<img data-src="/assets/img/sync-2.jpg?ver={{site.version}}" />
 
 [View Project](/midfirst/work/ithemes-sync)
 

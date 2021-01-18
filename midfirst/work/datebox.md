@@ -10,8 +10,8 @@ date: 2020-12-30T21:53:07-06:00
 {% for image in site.static_files %}
   {% if image.basename contains "datebox-" %}
     <li>
-      <a href="{{ site.url }}{{site.baseurl}}/assets/img/{{image.name}}?ver={{site.version}}">
-        <img data-src="{{ site.url }}{{site.baseurl}}/assets/img/{{image.name}}?ver={{site.version}}" />
+      <a href="/assets/img/{{image.name}}?ver={{site.version}}">
+        <img data-src="/assets/img/{{image.name}}?ver={{site.version}}" />
       </a>
     </li>
   {% endif %}

@@ -5,8 +5,6 @@ published: true
 date: 2020-12-30T21:53:07-06:00
 ---
 
-{% capture cdn_url%}{{ site.url }}{{site.baseurl}}/assets{%endcapture%}
-
 I am a designer and developer with a decade of experience in building websites, products,
 and systems in a variety of industries.
 
@@ -21,8 +19,8 @@ and [Achiever](https://www.gallup.com/cliftonstrengths/en/252134/achiever-theme.
 
 Currently living in Oklahoma City, OK with my wife and four year old son. I've a penchant for taking on
 hobbies long enough to master them and moving on, resulting in forays into everything from
-[sourdough bread](#){:class="js-open-image" data-image="{{ cdn_url }}/img/hobbies/sourdough.jpg?ver={{site.version}}"},
-[woodworking](#){:class="js-open-image" data-image="{{ cdn_url }}/img/hobbies/woodworking.jpg?ver={{site.version}}"}, and
-[boutique bar soaps](#){:class="js-open-image" data-image="{{ cdn_url }}/img/hobbies/bar-soaps.jpg?ver={{site.version}}"}.
+[sourdough bread](#){:class="js-open-image" data-image="/assets/img/hobbies/sourdough.jpg?ver={{site.version}}"},
+[woodworking](#){:class="js-open-image" data-image="/assets/img/hobbies/woodworking.jpg?ver={{site.version}}"}, and
+[boutique bar soaps](#){:class="js-open-image" data-image="/assets/img/hobbies/bar-soaps.jpg?ver={{site.version}}"}.
 
 <div class="js-image-holder"></div>

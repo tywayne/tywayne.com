@@ -25,8 +25,8 @@ Sites in use: [Ugmonk](https://ugmonk.com){:target="_blank"}, [Comrad](https://c
 {% for image in site.static_files %}
   {% if image.basename contains "minicart-" %}
     <li>
-      <a href="{{ site.url }}{{site.baseurl}}/assets/img/{{image.name}}?ver={{site.version}}">
-        <img data-src="{{ site.url }}{{site.baseurl}}/assets/img/{{image.name}}?ver={{site.version}}" />
+      <a href="/assets/img/{{image.name}}?ver={{site.version}}">
+        <img data-src="/assets/img/{{image.name}}?ver={{site.version}}" />
       </a>
     </li>
   {% endif %}

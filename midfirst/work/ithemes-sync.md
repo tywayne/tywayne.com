@@ -19,8 +19,8 @@ profitable product.
 {% for image in site.static_files %}
   {% if image.basename contains "sync-" %}
     <li>
-      <a href="{{ site.url }}{{site.baseurl}}/assets/img/{{image.name}}?ver={{site.version}}">
-        <img data-src="{{ site.url }}{{site.baseurl}}/assets/img/{{image.name}}?ver={{site.version}}" />
+      <a href="/assets/img/{{image.name}}?ver={{site.version}}">
+        <img data-src="/assets/img/{{image.name}}?ver={{site.version}}" />
       </a>
     </li>
   {% endif %}
