@@ -9,7 +9,7 @@ date: 2020-12-30T21:53:07-06:00
 
 <img data-src="/assets/img/maiden-home-2.png?ver={{site.version}}" />
 
-[View Project](/midfirst/work/maiden-home)
+[View Project &rarr;](/midfirst/work/maiden-home)
 
 ---
 
@@ -17,7 +17,7 @@ date: 2020-12-30T21:53:07-06:00
 
 <img data-src="/assets/img/minicart-1-ugmonk.png?ver={{site.version}}" />
 
-[View Project](/midfirst/work/minicart)
+[View Project &rarr;](/midfirst/work/minicart)
 
 
 ---
@@ -26,7 +26,7 @@ date: 2020-12-30T21:53:07-06:00
 
 <img data-src="/assets/img/plant-au-pair-1.jpg?ver={{site.version}}" />
 
-[View Project](/midfirst/work/plant-au-pair)
+[View Project &rarr;](/midfirst/work/plant-au-pair)
 
 ---
 
@@ -35,7 +35,7 @@ date: 2020-12-30T21:53:07-06:00
 
 <img data-src="/assets/img/datebox-3.gif?ver={{site.version}}" />
 
-[View Project](/midfirst/work/datebox)
+[View Project &rarr;](/midfirst/work/datebox)
 
 ---
 
@@ -43,6 +43,6 @@ date: 2020-12-30T21:53:07-06:00
 
 <img data-src="/assets/img/sync-2.jpg?ver={{site.version}}" />
 
-[View Project](/midfirst/work/ithemes-sync)
+[View Project &rarr;](/midfirst/work/ithemes-sync)
 
 ---
