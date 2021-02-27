@@ -21,16 +21,16 @@ My insatiable curiosity paired with a penchant for learning quickly has proved v
   <li>Open Source software such as NPM, React, React Native, Ruby on Rails, WordPress (Contributor)</li>
   <li>Build tools like SCSS/LESS and Babel</li>
   <li>Modern bundlers such as Webpack and Parcel</li>
-  <li>Version Control with Git, some experience with SVN</li>
   <li>AWS Lambda Functions in JavaScript</li>
   <li>Design software such as Sketch, Figma, Photoshop</li>
   <li>Project Management Tools such as Asana, Trello, Flow</li>
+  <li>Version Control with Git, some experience with SVN</li>
 </ul>
 
 ---
 ### Experience
 
-**Lead Front End Developer - [Rehash (now Pixel Union)](https://rehash.com){:target="_blank"}**<br>
+**Lead Front-End Developer - [Rehash (now Pixel Union)](https://rehash.com){:target="_blank"}{:rel="noreferrer nofollow"}**<br>
 *October 2018 - Present*
 
 Led the development of custom retail storefronts on the Shopify platform. Contributed to design and development of custom applications for merchants.
@@ -41,7 +41,7 @@ Developed internal libraries to efficiently execute custom storefronts, includin
 <br>
 <br>
 
-**Lead Front End Developer - [Datebox (now Happily)](https://thehappily.co){:target="_blank"}**<br>
+**Lead Front-End Developer - [Datebox (now Happily)](https://thehappily.co){:target="_blank"}{:rel="noreferrer nofollow"}**<br>
 *March 2017 - October 2018*
 
 Led front end development of all digital experiences including checkout flow, account management, podcast and media playback, and blog content.
@@ -54,7 +54,7 @@ Designed, developed, and released a mobile application using React Native (iOS o
 <br>
 
 
-**UX Engineer - [iThemes](https://ithemes.com){:target="_blank"}**<br>
+**Front-End Developer - [iThemes](https://ithemes.com){:target="_blank"}{:rel="noreferrer nofollow"}**<br>
 *October 2011 - March 2017*
 
 UX Design and development for a variety of WordPress plugins which powered over 700,000 websites.

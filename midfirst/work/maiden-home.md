@@ -12,14 +12,14 @@ technologies:
   - GraphQL & JSON API
 ---
 
-For the last couple of years I have worked at [Rehash](https://rehash.com){:target="_blank"}, helping retail
+For the last couple of years I have worked at [Rehash](https://rehash.com){:target="_blank"}{:rel="noreferrer nofollow"}, helping retail
 merchants reach their potential through design and development. Once such merchant required an order tracking and
 manufacturing flow that was outside of the feature-set that is built into the Shopify platform. We built a custom
 application that tracked Shopify Orders through a new set of stages, complete with customer communication along
 the way.
 
 Their team was already familiar with the conventions of a Shopify Store admin, so we chose to build the tool with
-the [Shopify Polaris](https://polaris.shopify.com/){:target="_blank"} design system and React components. This approach
+the [Shopify Polaris](https://polaris.shopify.com/){:target="_blank"}{:rel="noreferrer nofollow"} design system and React components. This approach
 let us deliver an MVP in less than a month as well as the flexibility to quickly iterate new features as they scale.
 
 I took a text based design approach on the initial build — writing out the details, content, and functionality in a

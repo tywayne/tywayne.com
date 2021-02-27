@@ -13,7 +13,7 @@ technologies:
 
 
 One particularly complex yet consistent piece of any eCommerce website is the Add-to-Cart flow. In an effort to
-lower the overhead of setting this up on new sites at [Rehash](https://www.rehash.com){:target="_blank"}, I designed and developed
+lower the overhead of setting this up on new sites at [Rehash](https://www.rehash.com){:target="_blank"}{:rel="noreferrer nofollow"}, I designed and developed
 a drop-in library, allowing for an easy install AJAX shopping cart to be dropped in to any Shopify store. The components
 and functionality remain consistent to reduce bugs, but with granular control over style to blend in seamlessly with
 each individual store design.
