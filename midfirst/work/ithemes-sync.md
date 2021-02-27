@@ -3,6 +3,10 @@ title: "iThemes Sync"
 layout: midfirst
 published: true
 date: 2020-12-30T21:53:07-06:00
+technologies:
+  - HTML / SCSS / JavaScript
+  - PHP / WordPress
+  - JSON API
 ---
 
 [iThemes Sync](https://ithemes.com/sync/) is a SaaS product built during my time at [iThemes](https://ithemes.com).
@@ -14,6 +18,18 @@ reports on various statistics that were invaluable in provided insight into the 
 My role in this project was design, front-end development, and project management — taking a feature roadmap
 and business requirements and working with the back-end development team to iterate and turn it into a
 profitable product.
+
+
+---
+
+<h4>Technology used:</h4>
+<ul class="list list--tight list--circle">
+  {% for item in page.technologies %}
+    <li>{{ item }}</li>
+  {% endfor  %}
+</ul>
+
+---
 
 <ul class="img-grid list list--inline">
 {% for image in site.static_files %}

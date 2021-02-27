@@ -3,6 +3,10 @@ title: "Plant Au Pair"
 layout: midfirst
 published: true
 date: 2020-12-30T21:53:07-06:00
+technologies:
+  - JavaScript
+  - React Native
+  - Sketch
 ---
 
 Finding, collecting, propagating, and cultivating houseplants is a longtime hobby of my wife and I.

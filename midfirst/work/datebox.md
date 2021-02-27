@@ -3,6 +3,10 @@ title: "Datebox Design System"
 layout: midfirst
 published: true
 date: 2020-12-30T21:53:07-06:00
+technologies:
+  - HTML / SCSS / JavaScript
+  - Ruby on Rails
+  - Ruby Gems
 ---
 
 As the first UX employee within a small startup, I was able to revitalize and set guides for our marketing
@@ -17,6 +21,18 @@ for best use of the components.
 
 In additional to documentation for our web components, the site included guidelines and suggestions for
 both Brand and Voice — detailing how the brand should be presented in visuals and copy.
+
+
+---
+
+<h4>Technology used:</h4>
+<ul class="list list--tight list--circle">
+  {% for item in page.technologies %}
+    <li>{{ item }}</li>
+  {% endfor  %}
+</ul>
+
+---
 
 <ul class="img-grid list list--inline">
 {% for image in site.static_files %}

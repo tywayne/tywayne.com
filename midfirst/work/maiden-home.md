@@ -3,6 +3,13 @@ title: "Maiden Home Order Management"
 layout: midfirst
 published: true
 date: 2020-12-30T21:53:07-06:00
+technologies:
+  - React
+  - SCSS
+  - Webpack
+  - Ruby on Rails
+  - Shopify Polaris
+  - GraphQL & JSON API
 ---
 
 For the last couple of years I have worked at [Rehash](https://rehash.com){:target="_blank"}, helping retail
@@ -18,6 +25,17 @@ let us deliver an MVP in less than a month as well as the flexibility to quickly
 I took a text based design approach on the initial build — writing out the details, content, and functionality in a
 UX Plan document. This supported and encouraged quick feedback and provided a documented outline of the screens necessary
 to build out using the aforementioned Polaris Design System.
+
+---
+
+<h4>Technology used:</h4>
+<ul class="list list--tight list--circle">
+  {% for item in page.technologies %}
+    <li>{{ item }}</li>
+  {% endfor  %}
+</ul>
+
+---
 
 <ul class="img-grid list list--inline">
 {% for image in site.static_files %}
