@@ -1,14 +1,8 @@
-{% if jekyll.environment == 'production'%}
-  {% capture cdn_url%}{{site.cdn_url}}/{%endcapture%}
-{% else %}
-  {% capture cdn_url%}{{site.baseurl}}/assets/{%endcapture%}
-{% endif %}
-
 <ul class="lazy-list list">
 {% for image in site.static_files %}
   {% if image.path contains page.img_dir and image.path contains "-" %}
     <li>
-      <img data-src="{{cdn_url}}{{page.img_dir}}{{image.basename}}{{image.extname}}?ver={{site.version}}" />
+      <img data-src="/assets/{{page.img_dir}}{{image.basename}}{{image.extname}}?ver={{site.version}}" />
     </li>
   {% endif %}
 {% endfor %}

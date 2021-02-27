@@ -19,7 +19,7 @@ layout: default
       },
       "headline": "Photography | {{ page.title }}",
       "image": [
-        "{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/{%if page.cover_image%}{{page.cover_img}}{%else%}avatar_tycarlson.jpg{%endif%}"
+        "/assets/{%if page.cover_image%}{{page.cover_img}}{%else%}img/avatar_tycarlson.jpg{%endif%}"
        ],
       "datePublished": "{{page.date}}",
       "dateModified": "{{page.date}}",
@@ -32,7 +32,7 @@ layout: default
         "name": "tywayne.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "{% if jekyll.environment == 'production' %}{{ site.cdn_url }}{% else %}/assets{% endif %}/avatar_tycarlson.jpg"
+          "url": "/assets/img/avatar_tycarlson.jpg"
         }
       },
       "description": "{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}"

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "bundle exec jekyll serve",
     "build":"bundle exec jekyll build",
-    "build:serve":"bundle exec jekyll build && serve ./_site"
+    "build:serve":"JEKYLL_ENV=production bundle exec jekyll build && serve ./_site"
   },
   "repository": {
     "type": "git",
