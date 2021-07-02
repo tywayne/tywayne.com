@@ -15,7 +15,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
-    ffi (1.13.1)
+    ffi (1.15.3)
     forwardable-extended (2.6.0)
     htmlcompressor (0.4.0)
     http_parser.rb (0.6.0)
@@ -85,6 +85,7 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -99,9 +100,10 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-sitemap
   tzinfo-data
+  webrick (~> 1.7)
 
 RUBY VERSION
-   ruby 2.6.3p62
+   ruby 2.7.2p137
 
 BUNDLED WITH
-   2.2.1
+   2.2.21
